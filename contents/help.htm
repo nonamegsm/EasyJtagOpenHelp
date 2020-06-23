@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>EasyJTAG Classic Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   				
+ 
+<link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
+<link href="js/hghelp.css" rel="stylesheet" type="text/css">
+<link rel="Stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js" type="text/javascript"></script> 
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.min.js" type="text/javascript"></script>  
+<script type="text/javascript" src="js/jquery.jstree.js"></script> 
+<script type="text/javascript" src="js/jquery.printElement.js"></script>
+<script type="text/javascript" src="js/hghelp.js"></script>     
+</head>
+
+<body>
+    <div id="pagewidth">
+        <div id="header" class="ui-widget-header">
+			<button id="home" onclick="home()">home</button>
+			<a href="javascript:history.go(-1)"><button id="back">back</button></a> 
+			<a href="javascript:history.go(1)"><button id="forward">forward</button></a> 
+			<button id="previous" onclick="previous()">previous in tree</button> 
+			<button id="next" onclick="next()">next in tree</button>
+			<button id="print" onclick="print()">print</button>
+			<button id="zoom" onclick="zoomin()">zoom</button>
+			<button id="hideshow" onclick="hideshow()">hide/show left column</button> 
+			<button id="jump1" onclick="jump1()">""</button> 
+			<button id="jump2" onclick="jump2()">""</button>             
+            <div id="title">EasyJTAG Classic Help</div>
+
+        </div> <!--header -->
+        <div class="clear">
+        </div>
+        <!-- -->
+        <div class="left_column" id="leftpane">
+            <div id="tabs">
+                <ul id="maintab">
+                    <li><a href="#tabs-1">Contents</a></li>
+                    <li><a href="#tabs-2">Index</a></li>
+                    <li><a href="#tabs-3">Search</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <div id="treecontents">
+                    </div>
+                </div><!--tabs1  -->
+                <div id="tabs-2" class="toleft">
+                <div class="toleft">Type in the keyword to find:<br> </div>
+                <input type="text" name="tsearch" id="tsearch" class="inputsearch"> 
+                   <div id="treeindex">
+                    </div>             
+                </div><!--tabs2-->
+                <!-- -->
+                <div id="tabs-3" class="toleft">
+	                <form action="websearch.htm" target="right">
+	                <div class="toleft">Type in the keyword to find:</div>
+                    <input type="text" name="s" class="inputsearch">&nbsp;
+                    <input type="submit" value="List Topics" class="placeright"></form>
+                </div><!--tabs3  frameborder="0"-->
+            </div><!--tabs-->
+        </div><!--left_column-->
+        <div class="right_column" id="rightpane">
+            <iframe id="right" name="right" class="ui-corner-all"></iframe>
+            <!--height="480px" -->
+        </div><!--right_column-->
+         <script type="text/javascript">
+// +home1 and spage
+// variables filled by the help generator
+var home1= "EasyJTAG_Classic_Help.html"; //home.htm
+var spage = "EasyJTAG_Classic_Help.html"; //default.htm
+var jump1url = ""; 
+var jump1text = ""; 
+var jump2url = "";
+var jump2text = "";
+// -home1 and spage
+
+         $("#home").button({text: false, icons: { primary: "ui-icon-home_"}});
+         $("#back").button({text: false, icons: { primary: "ui-icon-back_"}}); 
+         $("#forward").button({text: false, icons: { primary: "ui-icon-forward_"}});         
+         $("#previous").button({text: false, icons: { primary: "ui-icon-previous_"}});
+         $("#next").button({text:false, icons: { primary: "ui-icon-next_"}});                 
+         $("#hideshow").button({text: false, icons: { primary: "ui-icon-hideshow"}});  
+         $("#zoom").button({text: false, icons: { primary: "ui-icon-zoom"}}); 
+         $("#print").button({text: false, icons: { primary: "ui-icon-print_"}}); 
+         $("#jump1").button({text: false, icons: { primary: "ui-icon-support"}}); 
+         $("#jump2").button({text: false, icons: { primary: "ui-icon-faq"}}); 
+                              
+     </script>                
+    </div> <!---pagewidth-->
+	<p>&nbsp;</p>
+</body></html>

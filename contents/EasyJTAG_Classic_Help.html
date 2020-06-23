@@ -1,0 +1,128 @@
+﻿<html>
+<head>
+<title>EasyJTAG Classic Help</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>EasyJTAG Classic Help</h1>
+<table class="box overview">
+<tbody>
+<tr>
+<th>Overview</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li><a href="#Introduse">Introduse</a></li>
+<li><a href="#Hardware">Hardware</a></li>
+<li><a href="#Software">Software</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="Introduse">Introduse</a></h2>
+<p>The <strong>EasyJtag</strong> it's hardware and software complex&nbsp;which
+intended for the automated restoration of firmware of mobile phones,
+smartphones, tablets and other electronic devices, hereinafter referred to as
+devices using the JTAG interface and/or eMMC, UFS memory chips.</p>
+<p><strong>EasyJTAG</strong> was originally invented as JTAG Box, so no power
+was present on the connector. Further, when developing the eMMC functional
+connection, it was necessary to use external power regulators eMMC (2.8-3.3v
+core and 1.8-2.8-3.3v - IO (I/O interface levels)). Of course, it was possible
+to use one stabilizer at 2.8-3.3v, but this is appropriate only when the eMMC
+is connected to the adapter block. When connecting the ISP (In-System
+Programming) - soldering to the chip soldered to the board, you need to use 1.8
+(IO) and 2.8 (core) in order not to damage the chips connected to these lines.
+Among other things, the support for SPI flash drives was added in order to
+support EasyJTAG/EasyJTAG Plus (external switched power supply regulator
+1.8-2.8-3.3 is required for different chips according to the
+documentation).</p>
+<p>&nbsp;</p>
+<h2><a name="Hardware">Hardware</a>&nbsp;</h2>
+<p>The hardware is represented by two solutions. It's <a href="EasyJTAG_box.htm">EasyJtag box</a> and <a href="EasyJTAG_Plus_box.htm">EasyJtagPlus box</a>.</p>
+<p><a href="EasyJTAG_box.htm">EasyJTAG box</a> is first generation box
+which&nbsp;support:</p>
+<ul>
+<li>JTAG connection (with native jtag 20pin cable)</li>
+<li>ISP (eMMC at PCB) connection (with additional third party adapter)</li>
+<li>eMMC e-Socket connection (1-bit mode with additional third party
+adapter)</li>
+<li>SPI connection (with additional external chip power (1,8 or 3,3v)
+adapter)</li>
+</ul>
+<table class="img-table">
+<tbody>
+<tr>
+<th>&nbsp;<img border="0" hspace="0" alt="" src="images/1 box_front_end.PNG"></th>
+</tr>
+<tr>
+<td>
+<p align="center">EasyJTAG box</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="EasyJTAG_Plus_box.htm">EasyJTAG Plus box</a>&nbsp;is second
+generation box which&nbsp;support:</p>
+<ul>
+<li>JTAG connection (with native Z3x adapter)</li>
+<li>eMMC e-Socket connection (with native Z3x e-Socket adapter or additional
+third party e-Socket adapter)</li>
+<li>ISP (eMMC at PCB) 1-bit mode connection (with native Z3x adapter)</li>
+<li>SPI connection (with additional socket or soldering adapter)</li>
+<li>NAND connection (with additional NAND Kit adapter)</li>
+<li>M-PHY (UFS Memory) connection (with additional special UFS Memory socket
+adapter)</li>
+</ul>
+<table class="img-table">
+<tbody>
+<tr>
+<th>&nbsp;<img border="0" hspace="0" alt="" src="images/Box1.jpg"></th>
+</tr>
+<tr>
+<td>
+<p align="center">EasyJTAG Plus box</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>&nbsp;</h2>
+<h2><a name="Software">Software</a></h2>
+<p><strong>EasyJTAG Plus</strong> is the Lightweight
+software with a friendly <a href="Interface.htm">Interface</a>, made especially
+for mobile phones repair, eMMC and UFS memory chips replacement and user data
+recovery.</p>
+<p>The following types of connection to <strong>EasyJTAG:</strong></p>
+<ol>
+<li><a href="JTAG_Operations.htm">JTAG</a></li>
+<li><a href="eMMC_Operations.htm">eMMC</a></li>
+<li>ISP eMMC</li>
+<li>HiPower CLK ISP eMMC</li>
+<li>SPI</li>
+<li><a href="UFS_Operations.htm">UFS</a></li>
+</ol>
+<p><strong>Features:</strong></p>
+<ul>
+<li>eMMC General Functionality: Read, Write, Erase, Change Boot Mode and HW
+Prtitioning Functions<br>
+</li>
+<li>Vendor Read Functions (Can read eMMC Data in Factory Firmware Pack for
+Samsung, Qualcomm, LG, MTK)</li>
+<li>Vendor Write Function (Can directly flash Factory Firmwares in eMMC Chips
+Samsung, Qualcomm, LG, MTK, Huawei, Spreadtrum)</li>
+<li>Android EXT4 file system Explorer</li>
+</ul>
+<p><img src="images/eMMC_tool_Suite.jpg"></p>
+<br>
+<div id="nstext">
+<hr>
+</div>
+<div class="copyright"><em>Copyright (c) 2020</em> <a href="http://easy-jtag.com/" target="_blank"><em>EasyJtag</em></a> <em>by</em> <a href="https://z3x-team.com/" target="_blank"><em>Z3X-Team</em></a><em>. All
+Rights Reserved.</em></div>
+<script type="text/javascript" src="js/custom.js">
+</script>
+</body>
+</html>
+

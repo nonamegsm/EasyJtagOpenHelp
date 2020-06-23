@@ -1,0 +1,135 @@
+﻿<html>
+<head>
+<title>USB Page</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>USB Page</h1>
+<p><strong>ADB</strong> - allows you to work with the device's memory through
+the ADB interface: Android Debugging Bridge, which is enabled in the device in
+the Developer Setting &gt; USB Debuging.<br>
+</p>
+<p><img src="images/USB_ADB.jpg"></p>
+<p><strong>Detect ADB</strong> - find/connect to the ADB interface of the
+device;<br>
+<strong>Detect Part.</strong> - identify device sections;<br>
+<strong>Dump Part.</strong> - read and save the selected section;<br>
+<strong>Read extCSD</strong> - read the configuration of the registers extCSD
+of the microchips memory device (eMMC) to the file;<br>
+<strong>Limit Dump Size To</strong> - limits the size of the selected
+section;<br>
+<strong>Partition List</strong> - illustrates the Symlink, Name, Size and
+Offset of partitions.</p>
+<p><br>
+<strong>QC EDL</strong> tab is working with <strong>Qualcomm</strong>
+processors.</p>
+<p><img src="images/USB_QC EDL.jpg"></p>
+<p>Qualcomm processors have a service mode that can be accessed by shortening a
+test pins.<br>
+</p>
+<p>Than the processor goes into boot mode and allows user to record the
+bootloader and trough it to perform the settings.<br>
+</p>
+<p>The sequence of operations :<br>
+1) <strong>Port</strong> - Allows to select a specific device (phone) that is
+connected via USB.<br>
+The button on the right allows to update the list of connected devices and
+automatically select the first QDLoader 9008 (the phone is in service
+mode).<br>
+2) <strong>Identify</strong> - allows to get the device status, ID and
+hash.<br>
+3) <strong>Loader</strong> - allows to select one of the compatible (by ID and
+hash) loaders from EasyJtag database, or use the Custom button to select the
+user bootloader in the box below.<br>
+4) The next time click the <strong>Identify</strong> button, a corresponding
+bootloader will be loaded into the device, allowing user to work with
+memory.<br>
+<strong>Reset Device</strong> - in some loaders and phones it allows you to
+switch from service mode to working mode. It doesn't always work, it's the
+features of a particular phone and Loader;<br>
+<strong>Read Info</strong> - reloading partitions;<br>
+<strong>Write Target</strong> – write to device.&nbsp;&nbsp; The nuance of
+WriteMode:<br>
+<strong>Write Binary Raw to 0 sector</strong> - offset linear recording;<br>
+<strong>Write XML Write by vendor</strong> - parses the main firmware file and
+writes the corresponding files to the specified offsets;<br>
+<strong>Write by partition name</strong> - reads GPT from a device, locates a
+file with the same name in the selected folder and writes to it;<br>
+<strong>GPT Backup Writing</strong> – backup the GPT;<br>
+<strong>Read RAW</strong> – linear reading;<br>
+<strong>Read XML</strong> - reads files by analogy as they are placed in the
+firmware;<br>
+<strong>Unlock User</strong> - attempt to reset the user's password;<br>
+<strong>Stop Operation</strong> – stops the device operation.</p>
+<p><strong>LG LAF</strong> - LG Advanced Flash. LG has developed e technology
+that greatly simplifies the replacement of system firmware in the device. This
+technology is called "LAF" (LG Advanced Flash).</p>
+<p>Initially, LAF technology was developed for LG service centers. In
+particular, it allowed to restore working capacity of LG mobile devices which
+do not turn on and do not react to attempts to turn them on (often mobile
+devices go into this state when trying to increase user's privileges in their
+operating system or in the case of errors in updating the system software
+produced by Unqualified users). However, a large number of utilities that use
+this technology appeared quite quickly outside specialized service centers for
+flashing the modified system software of LG mobile devices.</p>
+<p><img src="images/USB_LG LAF.jpg"></p>
+<p><strong>Detect LAF</strong> - Detect LG Device Info (Partitions / Android
+version);<br>
+<strong>Read RAW</strong> - Read dump from LG Device. If you are reading a full
+dump, you need select "Write binary at RAW mode". Also you need to select a
+size of write.<br>
+<strong>Format User</strong> - User Custom Data formating;<br>
+<strong>Clear FRP</strong> - FRP Data erasing;<br>
+<strong>Clear User Lock</strong> - User Password / Key erasing;<br>
+<strong>Stop Operation</strong> - button for interrupting / canceling the
+performed read / clear / write operations.</p>
+<p>There is an alternative instruction for transferring a LG mobile device to
+the Download mode published on the site "LG Download Mode utility and
+documentation"&nbsp; [ <font color="#548dd4">https://github.com/Leken
+steyn/lglaf</font> ].</p>
+<p>- Turn off the mobile device.</p>
+<p>- Connect the mobile device yo the computer using the <strong>USB
+cable</strong>:</p>
+<p><img src="images/LG_DeviceUSBconnected.png"><br>
+&nbsp;</p>
+<p>- Press and hold the <strong>Volume Up</strong> key.</p>
+<p>- Click on the <strong>"Start" ("Power")</strong> button.</p>
+<p>- Wait for the mobile device to display the message <strong>"Download
+mode"</strong>.</p>
+<p>- Release the <strong>Volume Up</strong> key.</p>
+<p>You should see the inscription on the screen of the mobile device:
+<strong>"Firmware Update"</strong>.</p>
+<p><img src="images/LG_LAF_FirmwareUpdateMode.png"></p>
+<p><strong>The image on the LG phone screen switched into the “Firmware Update”
+mode.</strong></p>
+<p>In mobile devices with the Android operating system version 6, it is
+possible to save application data not in the phone’s memory, but in the cloud
+[&nbsp;<font color="#548dd4">https://developer.android.com/guide/topics/data/autobackup.html</font>
+]</p>
+<p>Therefore, the process of extracting user data from a mobile device may fail
+due to the fact that initially this data was not stored in the device. In this
+situation, you can use the functionality of the program “Mobile forensics”,
+which allows you to restore users’ names and passwords from cloud storage (or
+to find cloud storage tokens in your device) and access the device data stored
+in the clouds.</p>
+<p><br>
+<br>
+</p>
+<table class="box bottomline">
+<tbody>
+<tr>
+<th><a href="Interface.htm">Software Interface</a></th>
+</tr>
+</tbody>
+</table>
+<div id="nstext">
+<hr>
+</div>
+<div class="copyright"><em>Copyright (c) 2020</em> <a href="http://easy-jtag.com/" target="_blank"><em>EasyJtag</em></a> <em>by</em> <a href="https://z3x-team.com/" target="_blank"><em>Z3X-Team</em></a><em>. All
+Rights Reserved.</em></div>
+<script type="text/javascript" src="js/custom.js">
+</script>
+</body>
+</html>
+

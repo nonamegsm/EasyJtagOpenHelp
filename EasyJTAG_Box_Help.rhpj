@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="2019.0.4">
+<title>EasyJTAG Box Help</title>
+<preferences>
+<language>en_US</language>
+<noInlineStyle>false</noInlineStyle>
+<defaultCss>contents/assets/css/default.css</defaultCss>
+<defaultWsf>settings/import/word/default.wsf</defaultWsf>
+<defaultFsf>settings/import/fm/default.fsf</defaultFsf></preferences>
+<statuslist>
+<status>Draft</status>
+<status>In Progress</status>
+<status>Ready for Review</status>
+<status>Sent for Review</status>
+<status>Reviewed</status>
+<status>Complete</status></statuslist>
+<ctaggroups>
+<group>Audience</group>
+<group>Platform</group>
+<group>Product</group>
+<group>Properties</group>
+<group>Others</group></ctaggroups>
+<colors></colors>
+<links></links>
+<content root="contents/"></content>
+<toc root="toc"></toc>
+<snippets root="contents/assets/snippets"></snippets>
+<glossary root="glossary"></glossary>
+<index root="index"></index>
+<seealso root="seealso"></seealso>
+<variable root="variable"></variable>
+<condition root="condition"></condition></project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preset>
+  <content>
+    <index type="boolean">true</index>
+    <toc>
+      <path>../../toc/Default.toc</path>
+      <name>Default</name>
+    </toc>
+    <glossary>
+      <path>../../glossary/Default.glo</path>
+      <name>Default</name>
+    </glossary>
+    <masterpage></masterpage>
+    <brs type="array"></brs>
+    <mapFiles type="array"></mapFiles>
+  </content>
+  <starterPage>Default.chm</starterPage>
+  <search>
+    <context type="boolean">false</context>
+    <contextLimit></contextLimit>
+  </search>
+  <sitemap>
+    <use type="boolean">false</use>
+    <changeFrequency></changeFrequency>
+    <helpBaseURL></helpBaseURL>
+  </sitemap>
+  <name>Microsoft HTML Help</name>
+  <type>chm</type>
+  <title>Blank Project</title>
+  <defaultTopic>
+    <name>First_Topic.htm</name>
+    <path>../../contents/First_Topic.htm</path>
+  </defaultTopic>
+  <outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/Microsoft HTML Help</outputPath>
+</preset>

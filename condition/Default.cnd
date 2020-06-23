@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+  <prop att="Platform" val="Online" backcolor="#00ff00"></prop>
+  <prop att="Platform" val="Print" backcolor="#ff0000"></prop>
+</val>

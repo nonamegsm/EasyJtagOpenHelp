@@ -1,41 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <preset>
-  <content>
-    <index type="boolean">true</index>
-    <toc>
-      <path>../../toc/Default.toc</path>
-      <name>Default</name>
+  
+<content>
+    
+<index type="boolean">true</index>
+    
+<toc>
+      
+<path>../../toc/Introdusing.toc</path>
+      
+<name>Default</name>
     </toc>
-    <glossary>
-      <path>../../glossary/Default.glo</path>
-      <name>Default</name>
+    
+<glossary>
+      
+<path>../../glossary/Default.glo</path>
+      
+<name>Default</name>
     </glossary>
-    <masterpage></masterpage>
-    <brs type="array"></brs>
-    <mapFiles type="array"></mapFiles>
+    
+<masterpage></masterpage>
+    
+<brs type="array"></brs>
+    
+<mapFiles type="array"></mapFiles>
   </content>
-  <starterPage>Default.pdf</starterPage>
-  <search>
-    <context type="boolean">false</context>
-    <contextLimit></contextLimit>
+  
+<starterPage>Default.pdf</starterPage>
+  
+<search>
+    
+<context type="boolean">false</context>
+    
+<contextLimit></contextLimit>
   </search>
-  <sitemap>
-    <use type="boolean">false</use>
-    <changeFrequency></changeFrequency>
-    <helpBaseURL></helpBaseURL>
+  
+<sitemap>
+    
+<use type="boolean">false</use>
+    
+<changeFrequency></changeFrequency>
+    
+<helpBaseURL></helpBaseURL>
   </sitemap>
-  <name>Printed Documentation</name>
-  <type>pdf</type>
-  <title>Blank Project</title>
-  <defaultTopic></defaultTopic>
-  <pdf>
-    <multiHeaders type="boolean">false</multiHeaders>
-    <margin type="array">
-      <marginitem type="number">10</marginitem>
-      <marginitem type="number">10</marginitem>
-      <marginitem type="number">10</marginitem>
-      <marginitem type="number">10</marginitem>
+  
+<name>Printed Documentation</name>
+  
+<type>pdf</type>
+  
+<title>Blank Project</title>
+  
+<defaultTopic></defaultTopic>
+  
+<pdf>
+    
+<multiHeaders type="boolean">false</multiHeaders>
+    
+<margin type="array">
+      
+<marginitem type="number">10</marginitem>
+      
+<marginitem type="number">10</marginitem>
+      
+<marginitem type="number">10</marginitem>
+      
+<marginitem type="number">10</marginitem>
     </margin>
   </pdf>
-  <outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/Printed Documentation</outputPath>
+  
+<outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/Printed Documentation</outputPath>
 </preset>

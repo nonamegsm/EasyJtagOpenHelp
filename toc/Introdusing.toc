@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <title>Table of Contents</title>
+  <book navtitle="Overview">
+    <book navtitle="Hardware">
+      <page navtitle="EasyJTAG Box" href="../contents/EasyJTAG_box.htm"></page>
+      <book navtitle="EasyJTAG Plus Box">
+        <book navtitle="Additional Instruments"></book>
+      </book>
+    </book>
+    <book navtitle="Software">
+      <book navtitle="EasyJTAG classic software">
+        <book navtitle="Interface">
+          <page navtitle="Log Page" href="../contents/Log_Page.htm"></page>
+          <page navtitle="JTAG Pinout Helper" href="../contents/JTAG_Pinout.htm"></page>
+          <page navtitle="eMMC Pinout Helper" href="../contents/eMMC_Pinout_Helper.htm"></page>
+          <page navtitle="GPT Partitions Tool" href="../contents/GPT_Partitions_Tool.htm"></page>
+          <page navtitle="Help System" href="../contents/Help_system.htm"></page>
+          <page navtitle="Easy Repair Page" href="../contents/Easy_Repair_Page.htm"></page>
+          <page navtitle="JTAG Page" href="../contents/JTAG_Page.htm"></page>
+          <page navtitle="eMMC Page" href="../contents/eMMC_Page.htm"></page>
+          <page navtitle="USB Page" href="../contents/USB_Page.htm"></page>
+        </book>
+      </book>
+    </book>
+    <book navtitle="JTAG Operations"></book>
+    <book navtitle="eMMC Operations">
+      <book navtitle="Read/Write Operation"></book>
+      <book navtitle="eMMC Advanced Procedures"></book>
+    </book>
+    <book navtitle="NAND Operations"></book>
+    <book navtitle="UFS Operations">
+      <book navtitle="UFS Read/Write Operation"></book>
+    </book>
+    <book navtitle="SPI Operations"></book>
+  </book>
+</map>

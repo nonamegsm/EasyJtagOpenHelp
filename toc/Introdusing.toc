@@ -23,6 +23,7 @@
           <page href="../contents/GPTPartitionsTool.htm"></page>
           <page href="../contents/HelpSystem.htm"></page>
           <page href="../contents/EasyRepairPage.htm"></page>
+          <page href="../contents/JTAGPage.htm"></page>
           <page href="../contents/eMMCPage.htm"></page>
           <page href="../contents/USBPage.htm"></page>
         </book>

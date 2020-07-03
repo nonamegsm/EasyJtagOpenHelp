@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <title>Table of Contents</title>
+  <book navtitle="Overview">
+    <book navtitle="Hardware">
+      <page navtitle="EasyJTAG box" href="../contents/EasyJTAGbox.htm"></page>
+      <book navtitle="EasyJTAG Plus box">
+        <page navtitle="Box Complectation" href="../contents/BoxComplectation.htm"></page>
+        <book navtitle="Additional Instruments">
+          <page href="../contents/eMMCSockets.htm"></page>
+          <page href="../contents/NANDkitAdapter.htm"></page>
+          <page href="../contents/UFSSockets.htm"></page>
+        </book>
+      </book>
+    </book>
+    <book navtitle="Software">
+      <book navtitle="EasyJTAG classic software">
+        <page href="../contents/Installation&amp;Drivers.htm"></page>
+        <book navtitle="Interface">
+          <page href="../contents/LogPage.htm"></page>
+          <page href="../contents/JTAGPinoutHelper.htm"></page>
+          <page href="../contents/eMMCPinoutHelper.htm"></page>
+          <page href="../contents/GPTPartitionsTool.htm"></page>
+          <page href="../contents/HelpSystem.htm"></page>
+          <page href="../contents/EasyRepairPage.htm"></page>
+          <page href="../contents/eMMCPage.htm"></page>
+          <page href="../contents/USBPage.htm"></page>
+        </book>
+        <page href="../contents/EasyJTAGPlusSoftware.htm"></page>
+        <page href="../contents/eMMCFileManagerAddon.htm"></page>
+      </book>
+    </book>
+    <book navtitle="JTAG Operations">
+      <page navtitle="EasyRepair Procedure" href="../contents/EasyRepairProcedure.htm"></page>
+      <page href="../contents/CustomOperations.htm"></page>
+    </book>
+    <book navtitle="eMMC Operations">
+      <page navtitle="Hardware Connection" href="../contents/HardwareConnection_eMMC.htm"></page>
+      <page href="../contents/Identify&amp;Check_eMMC.htm"></page>
+      <book navtitle="Read/Write Operation">
+        <page href="../contents/WorkWithPartitions.htm"></page>
+      </book>
+      <page href="../contents/eMMCConfiguration.htm"></page>
+      <book navtitle="eMMC Advanced Procedures">
+        <page href="../contents/RepairEMMCFirmware.htm"></page>
+      </book>
+    </book>
+    <book navtitle="NAND Operations">
+      <page navtitle="Hardware Connection" href="../contents/HardwareConnection_NAND.htm"></page>
+      <page href="../contents/ApplePPNiConfig.htm"></page>
+    </book>
+    <book navtitle="UFS Operations">
+      <page navtitle="Hardware Connection" href="../contents/HardwareConnection_UFS.htm"></page>
+      <page navtitle="Identify &amp; Check" href="../contents/Identify&amp;Check_UFS.htm"></page>
+      <book navtitle="Read/Write Operation">
+        <page href="../contents/WorkWithPartitions.htm"></page>
+      </book>
+      <page href="../contents/UFSConfiguration.htm"></page>
+    </book>
+    <book navtitle="SPI Operations">
+      <page navtitle="Hardware Connection" href="../contents/HardwareConnection_SPI.htm"></page>
+    </book>
+  </book>
+</map>

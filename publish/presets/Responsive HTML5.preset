@@ -1,40 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <preset>
-  <content>
-    <index type="boolean">true</index>
-    <toc>
-      <path>../../toc/Default.toc</path>
-      <name>Default</name>
+  
+<content>
+    
+<index type="boolean">true</index>
+    
+<toc>
+      
+<path>../../toc/Introdusing.toc</path>
+      
+<name>Default</name>
     </toc>
-    <glossary>
-      <path>../../glossary/Default.glo</path>
-      <name>Default</name>
+    
+<glossary>
+      
+<path>../../glossary/Default.glo</path>
+      
+<name>Default</name>
     </glossary>
-    <masterpage></masterpage>
-    <brs type="array"></brs>
+    
+<masterpage></masterpage>
+    
+<brs type="array"></brs>
   </content>
-  <starterPage>index.htm</starterPage>
-  <search>
-    <context type="boolean">true</context>
-    <contextLimit type="number">100</contextLimit>
-    <suggestion type="boolean">true</suggestion>
-    <fuzzy type="boolean">true</fuzzy>
-    <glossary type="boolean">true</glossary>
+  
+<starterPage>index.htm</starterPage>
+  
+<search>
+    
+<context type="boolean">true</context>
+    
+<contextLimit type="number">100</contextLimit>
+    
+<suggestion type="boolean">true</suggestion>
+    
+<fuzzy type="boolean">true</fuzzy>
+    
+<glossary type="boolean">true</glossary>
   </search>
-  <sitemap>
-    <use type="boolean">true</use>
-    <changeFrequency></changeFrequency>
-    <helpBaseURL></helpBaseURL>
+  
+<sitemap>
+    
+<use type="boolean">true</use>
+    
+<changeFrequency></changeFrequency>
+    
+<helpBaseURL></helpBaseURL>
   </sitemap>
-  <skin></skin>
-  <name>Responsive HTML5</name>
-  <type>html5</type>
-  <title>Blank Project</title>
-  <defaultTopic>
-    <name>First_Topic.htm</name>
-    <path>../../contents/First_Topic.htm</path>
+  
+<skin></skin>
+  
+<name>Responsive HTML5</name>
+  
+<type>html5</type>
+  
+<title>Blank Project</title>
+  
+<defaultTopic>
+    
+<name>First_Topic.htm</name>
+    
+<path>../../contents/First_Topic.htm</path>
   </defaultTopic>
-  <glosstermEffect type="number">0</glosstermEffect>
-  <createThumbNails type="boolean">true</createThumbNails>
-  <outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/Responsive HTML5</outputPath>
+  
+<glosstermEffect type="number">0</glosstermEffect>
+  
+<createThumbNails type="boolean">true</createThumbNails>
+  
+<outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/Responsive HTML5</outputPath>
 </preset>

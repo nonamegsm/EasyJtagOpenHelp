@@ -3,25 +3,18 @@
   <title>Table of Contents</title>
   <book navtitle="Overview">
     <book navtitle="Hardware">
-<<<<<<< HEAD
-      <page navtitle="EasyJTAG box" href="../contents/EasyJTAGbox.htm"></page>
-      <book navtitle="EasyJTAG Plus box">
-        <page navtitle="Box Complectation" href="../contents/BoxComplectation.htm"></page>
+      <page href="../contents/EasyJTAGbox.htm"></page>
+      <book navtitle="EasyJTAG Plus Box">
+        <page href="../contents/BoxComplectation.htm"></page>
         <book navtitle="Additional Instruments">
           <page href="../contents/eMMCSockets.htm"></page>
           <page href="../contents/NANDkitAdapter.htm"></page>
           <page href="../contents/UFSSockets.htm"></page>
         </book>
-=======
-      <page navtitle="EasyJTAG Box" href="../contents/EasyJTAG_box.htm"></page>
-      <book navtitle="EasyJTAG Plus Box">
-        <book navtitle="Additional Instruments"></book>
->>>>>>> 4db8b112814dfb5b39535454f65e15f0a97e6a8a
       </book>
     </book>
     <book navtitle="Software">
-      <book navtitle="EasyJTAG classic software">
-<<<<<<< HEAD
+      <book navtitle="EasyJTAG Classic Software">
         <page href="../contents/Installation&amp;Drivers.htm"></page>
         <book navtitle="Interface">
           <page href="../contents/LogPage.htm"></page>
@@ -38,60 +31,35 @@
         <page href="../contents/eMMCFileManagerAddon.htm"></page>
       </book>
     </book>
-    <book navtitle="JTAG Operations">
-      <page navtitle="EasyRepair Procedure" href="../contents/EasyRepairProcedure.htm"></page>
-      <page href="../contents/CustomOperations.htm"></page>
+  </book>
+  <book navtitle="JTAG Operations">
+    <page href="../contents/EasyRepairProcedure.htm"></page>
+    <page href="../contents/CustomOperations.htm"></page>
+  </book>
+  <book navtitle="eMMC Operations">
+    <page href="../contents/HardwareConnection_eMMC.htm"></page>
+    <page href="../contents/Identify&amp;Check_eMMC.htm"></page>
+    <book navtitle="Read/Write Operation">
+      <page href="../contents/WorkWithPartitions.htm"></page>
     </book>
-    <book navtitle="eMMC Operations">
-      <page navtitle="Hardware Connection" href="../contents/HardwareConnection_eMMC.htm"></page>
-      <page href="../contents/Identify&amp;Check_eMMC.htm"></page>
-      <book navtitle="Read/Write Operation">
-        <page href="../contents/WorkWithPartitions.htm"></page>
-      </book>
-      <page href="../contents/eMMCConfiguration.htm"></page>
-      <book navtitle="eMMC Advanced Procedures">
-        <page href="../contents/RepairEMMCFirmware.htm"></page>
-      </book>
+    <page href="../contents/eMMCConfiguration.htm"></page>
+    <book navtitle="eMMC Advanced Procedures">
+      <page href="../contents/RepairEMMCFirmware.htm"></page>
     </book>
-    <book navtitle="NAND Operations">
-      <page navtitle="Hardware Connection" href="../contents/HardwareConnection_NAND.htm"></page>
-      <page href="../contents/ApplePPNiConfig.htm"></page>
+  </book>
+  <book navtitle="NAND Operations">
+    <page href="../contents/HardwareConnection_UFS.htm"></page>
+    <page href="../contents/ApplePPNiConfig.htm"></page>
+  </book>
+  <book navtitle="UFS Operations">
+    <page href="../contents/HardwareConnection_UFS.htm"></page>
+    <page href="../contents/Identify&amp;Check_UFS.htm"></page>
+    <book navtitle="UFS Read/Write Operation">
+      <page href="../contents/WorkWithPartitions.htm"></page>
     </book>
-    <book navtitle="UFS Operations">
-      <page navtitle="Hardware Connection" href="../contents/HardwareConnection_UFS.htm"></page>
-      <page navtitle="Identify &amp; Check" href="../contents/Identify&amp;Check_UFS.htm"></page>
-      <book navtitle="Read/Write Operation">
-        <page href="../contents/WorkWithPartitions.htm"></page>
-      </book>
-      <page href="../contents/UFSConfiguration.htm"></page>
-    </book>
-    <book navtitle="SPI Operations">
-      <page navtitle="Hardware Connection" href="../contents/HardwareConnection_SPI.htm"></page>
-    </book>
-=======
-        <book navtitle="Interface">
-          <page navtitle="Log Page" href="../contents/Log_Page.htm"></page>
-          <page navtitle="JTAG Pinout Helper" href="../contents/JTAG_Pinout.htm"></page>
-          <page navtitle="eMMC Pinout Helper" href="../contents/eMMC_Pinout_Helper.htm"></page>
-          <page navtitle="GPT Partitions Tool" href="../contents/GPT_Partitions_Tool.htm"></page>
-          <page navtitle="Help System" href="../contents/Help_system.htm"></page>
-          <page navtitle="Easy Repair Page" href="../contents/Easy_Repair_Page.htm"></page>
-          <page navtitle="JTAG Page" href="../contents/JTAG_Page.htm"></page>
-          <page navtitle="eMMC Page" href="../contents/eMMC_Page.htm"></page>
-          <page navtitle="USB Page" href="../contents/USB_Page.htm"></page>
-        </book>
-      </book>
-    </book>
-    <book navtitle="JTAG Operations"></book>
-    <book navtitle="eMMC Operations">
-      <book navtitle="Read/Write Operation"></book>
-      <book navtitle="eMMC Advanced Procedures"></book>
-    </book>
-    <book navtitle="NAND Operations"></book>
-    <book navtitle="UFS Operations">
-      <book navtitle="UFS Read/Write Operation"></book>
-    </book>
-    <book navtitle="SPI Operations"></book>
->>>>>>> 4db8b112814dfb5b39535454f65e15f0a97e6a8a
+    <page href="../contents/UFSConfiguration.htm"></page>
+  </book>
+  <book navtitle="SPI Operations">
+    <page href="../contents/HardwareConnection_SPI.htm"></page>
   </book>
 </map>

@@ -9,8 +9,43 @@
 </head>
 <body>
   <h1>GPT Partitions Tool</h1>
-  <p>This is the first topic in your project. Delete this text and replace it with your own. To add a new topic, click the <b>New Topic </b>button on the tool bar.</p>
+  <p>This tab displays and allows you to work with flash partitions,<br />
+    which are marked in the <strong>GPT</strong> table, and works with Dump Files (sector size 0x200).</p>
   <p> </p>
-  <p>To learn more about the Editor, press <b>F1</b> (with your cursor in this pane) to display Help.</p>
+  <p style="text-align: left"><img align="" alt="GPT Partitions Tool" height="" src="assets/images/GPT Partition Tab.jpg" title="GPT Partitions Tool" width="100%" /></p>
+  <p>The information is updated using the buttons on this panel:</p>
+  <p> </p>
+  <p><strong>eMMC</strong> - the name of the selected interface. Its color: green - ok, red - error (see log), blue - data update.</p>
+  <p> </p>
+  <p><strong>File</strong> - opens the selected dump file and allows you to work with it. Available only with dumps with a sector size of 0x200.</p>
+  <p> </p>
+  <p><strong>Reload </strong>- updates data by re-reading them from a previous source.</p>
+  <p> </p>
+  <p><strong>Cancel </strong>- cancels the task. Equivalent Stop Operation for any of the interfaces.</p>
+  <p> </p>
+  <p><strong>Read </strong>- reads selected sections.</p>
+  <p> </p>
+  <p><strong>Write </strong>- writes selected sections.</p>
+  <p> </p>
+  <p><strong>Erase </strong>- erases selected sections.</p>
+  <p> </p>
+  <p><strong>Fix Tables</strong> - fixes errors in GPT tables (main or backup), or recreates them in the absence. It is important that at least one is valid.</p>
+  <p> </p>
+  <p><strong>Create </strong>- creates a new partition (currently not work).</p>
+  <p> </p>
+  <p><strong>Delete </strong>- deletes the partition.</p>
+  <p> </p>
+  <p><strong>Resize </strong>- changes the partition size (works only for the last partition).</p>
+  <p> </p>
+  <p><strong>All </strong>- selects all partitions.</p>
+  <p> </p>
+  <p><strong>None </strong>-  removes selection from all partitions.</p>
+  <p> </p>
+  <p>Additionally, when you right-click there is a context menu, which facilitates selection and allows you to read / read selected sections.</p>
+  <p> </p>
+  <p> </p>
+  <p><a href="SoftwareInterface.htm" style="font-size: 11pt;">Software Interface</a></p>
+  <p> </p>
+  <p>Copyright (c) 2020 <a href="http://easy-jtag.com/">EasyJTAG</a> by <a href="https://z3x-team.com/">Z3X-Team.</a> All Rights Reserved.</p>
 </body>
 </html>

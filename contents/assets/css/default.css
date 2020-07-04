@@ -1,4 +1,4 @@
-﻿/*Created with Adobe RoboHelp 2019.*/
+/*Created with Adobe RoboHelp 2019.*/
 body {
 	font-family: Calibri;
 	background-color: #ffffff;
@@ -115,4 +115,13 @@ ol.reltopics-list {
 }
 a.reltopics-list-item {
 
+}
+ul.Disc {
+	list-style-type: disc;
+}
+ul.Circle {
+	list-style-type: circle;
+}
+ol.Decimal {
+	list-style-type: decimal;
 }

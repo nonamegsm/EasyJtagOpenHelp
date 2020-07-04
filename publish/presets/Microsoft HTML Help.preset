@@ -1,62 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <preset>
-  
-<content>
-    
-<index type="boolean">true</index>
-    
-<toc>
-      
-<path>../../toc/Introdusing.toc</path>
-      
-<name>Default</name>
+  <content>
+    <variable></variable>
+    <conditional></conditional>
+    <startPage></startPage>
+    <toc>
+      <name>Introdusing</name>
+      <path>../../toc/Introdusing.toc</path>
     </toc>
-    
-<glossary>
-      
-<path>../../glossary/Default.glo</path>
-      
-<name>Default</name>
+    <index type="boolean">true</index>
+    <glossary>
+      <name>Default</name>
+      <path>../../glossary/Default.glo</path>
     </glossary>
-    
-<masterpage></masterpage>
-    
-<brs type="array"></brs>
-    
-<mapFiles type="array"></mapFiles>
+    <brs type="array"></brs>
+    <language></language>
+    <masterpage></masterpage>
+    <mapFiles type="array"></mapFiles>
+    <windowsSetting></windowsSetting>
   </content>
-  
-<starterPage>Default.chm</starterPage>
-  
-<search>
-    
-<context type="boolean">false</context>
-    
-<contextLimit></contextLimit>
-  </search>
-  
-<sitemap>
-    
-<use type="boolean">false</use>
-    
-<changeFrequency></changeFrequency>
-    
-<helpBaseURL></helpBaseURL>
-  </sitemap>
-  
-<name>Microsoft HTML Help</name>
-  
-<type>chm</type>
-  
-<title>Blank Project</title>
-  
-<defaultTopic>
-    
-<name>First_Topic.htm</name>
-    
-<path>../../contents/First_Topic.htm</path>
+  <title>Blank Project</title>
+  <type>chm</type>
+  <glosstermEffect></glosstermEffect>
+  <outputPath>D:/</outputPath>
+  <name>Microsoft HTML Help</name>
+  <starterPage>Default.chm</starterPage>
+  <defaultTopic>
+    <name>First_Topic</name>
+    <path>../../contents/First_Topic.htm</path>
   </defaultTopic>
-  
-<outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/Microsoft HTML Help</outputPath>
+  <encoding></encoding>
+  <lowercasenames></lowercasenames>
+  <epub>
+    <fonts></fonts>
+    <cover></cover>
+    <title></title>
+    <author></author>
+    <description></description>
+    <rights></rights>
+    <uuid></uuid>
+    <date></date>
+    <check></check>
+    <publisher></publisher>
+  </epub>
+  <mobileapp>
+    <configfile></configfile>
+    <android></android>
+    <iOS></iOS>
+    <iosP12File></iosP12File>
+    <androidAlias></androidAlias>
+    <pgbChange></pgbChange>
+    <iosMobProvision></iosMobProvision>
+    <androidKeystore></androidKeystore>
+    <package></package>
+    <icon></icon>
+    <name></name>
+    <version></version>
+    <versionCode></versionCode>
+    <description></description>
+    <splash></splash>
+  </mobileapp>
+  <search>
+    <suggestion></suggestion>
+    <substring></substring>
+    <context type="boolean">false</context>
+    <contextLimit></contextLimit>
+    <highlight></highlight>
+    <highlightcolor></highlightcolor>
+    <autocomplete></autocomplete>
+    <autocorrect></autocorrect>
+    <glossary></glossary>
+    <fileTypes></fileTypes>
+    <external></external>
+    <fuzzy></fuzzy>
+    <doSearchIndexing></doSearchIndexing>
+  </search>
+  <filter></filter>
+  <sitemap>
+    <use type="boolean">false</use>
+    <helpBaseURL></helpBaseURL>
+    <changeFrequency></changeFrequency>
+  </sitemap>
+  <skin></skin>
+  <createThumbNails></createThumbNails>
+  <favicon></favicon>
+  <thumbnail></thumbnail>
+  <pdf>
+    <toclevel></toclevel>
+    <coverpage></coverpage>
+    <pageSize></pageSize>
+    <width></width>
+    <height></height>
+    <tocdepth></tocdepth>
+    <margin></margin>
+    <masterpage></masterpage>
+    <multiHeaders></multiHeaders>
+    <tocMasterPages></tocMasterPages>
+    <topicMasterPages></topicMasterPages>
+    <gloMasterPages></gloMasterPages>
+    <indexMasterPages></indexMasterPages>
+  </pdf>
+  <serversstatus></serversstatus>
 </preset>

@@ -9,8 +9,84 @@
 </head>
 <body>
   <h1>USB Page</h1>
-  <p>This is the first topic in your project. Delete this text and replace it with your own. To add a new topic, click the <b>New Topic </b>button on the tool bar.</p>
+  <p><strong>ADB</strong> - allows you to work with the device&#39;s memory through the ADB interface: Android Debugging Bridge, which is enabled in the device in the Developer Setting &gt; USB Debuging.</p>
   <p> </p>
-  <p>To learn more about the Editor, press <b>F1</b> (with your cursor in this pane) to display Help.</p>
+  <p style="text-align: left"><img alt="USB ADB Page" height="" src="assets/images/USB_ADB.jpg" title="USB ADB Page" width="100%" /></p>
+  <p> </p>
+  <p><strong></strong></p>
+  <p><strong>Detect ADB</strong> - find/connect to the ADB interface of the device;<br />
+    <strong>Detect Part.</strong> - identify device sections;<br />
+    <strong>Dump Part.</strong> - read and save the selected section;<br />
+    <strong>Read extCSD</strong> - read the configuration of the registers extCSD of the microchips memory device (eMMC) to the file;<br />
+    <strong>Limit Dump Size To</strong> - limits the size of the selected section;<br />
+    <strong>Partition List</strong> - illustrates the Symlink, Name, Size and Offset of partitions.</p>
+  <p> </p>
+  <p> </p>
+  <p><strong>QC EDL</strong> tab is working with <strong>Qualcomm </strong>processors.</p>
+  <p> </p>
+  <p style="text-align: left"><img alt="USB Qualcomm EDL" height="" src="assets/images/USB_QC EDL.jpg" title="USB Qualcomm EDL" width="100%" /></p>
+  <p> </p>
+  <p>Qualcomm processors have a service mode that can be accessed by shortening a test pins.</p>
+  <p><br />
+    Than the processor goes into boot mode and allows user to record the bootloader and trough it to perform the settings.</p>
+  <p><br />
+    The sequence of operations :</p>
+  <ol class="Decimal">
+    <li><strong>Port</strong> - Allows to select a specific device (phone) that is connected via USB. The button on the right allows to update the list of connected devices and automatically select the first QDLoader 9008 (the phone is in service mode).</li>
+    <li><strong>Identify</strong> - allows to get the device status, ID and hash.</li>
+    <li><strong>Loader </strong>- allows to select one of the compatible (by ID and hash) loaders from EasyJtag database, or use the Custom button to select the user bootloader in the box below.</li>
+    <li>The next time click the <strong>Identify </strong>button, a corresponding bootloader will be loaded into the device, allowing user to work with memory.</li>
+  </ol>
+  <p><strong>Reset Device</strong> - in some loaders and phones it allows you to switch from service mode to working mode. It doesn&#39;t always work, it&#39;s the features of a particular phone and Loader;<br />
+    <strong>Read Info</strong> - reloading partitions;<br />
+    <strong>Write Target</strong> - write to device.   The nuance of WriteMode:<br />
+    <strong>Write Binary Raw to 0 sector</strong> - offset linear recording;<br />
+    <strong>Write XML Write by vendor</strong> - parses the main firmware file and writes the corresponding files to the specified offsets;<br />
+    <strong>Write by partition name</strong> - reads GPT from a device, locates a file with the same name in the selected folder and writes to it;<br />
+    <strong>GPT Backup Writing</strong> - backup the GPT;<br />
+    <strong>Read RAW</strong> - linear reading;<br />
+    <strong>Read XML</strong> - reads files by analogy as they are placed in the firmware;<br />
+    <strong>Unlock User</strong> - attempt to reset the user&#39;s password;<br />
+    Stop Operation – stops the device operation.</p>
+  <p><strong>LG LAF</strong> - LG Advanced Flash. LG has developed e technology that greatly simplifies the replacement of system firmware in the device. This technology is called &quot;LAF&quot; (LG Advanced Flash).</p>
+  <p> </p>
+  <p>Initially, LAF technology was developed for LG service centers. In particular, it allowed to restore working capacity of LG mobile devices which do not turn on and do not react to attempts to turn them on (often mobile devices go into this state when trying to increase user&#39;s privileges in their operating system or in the case of errors in updating the system software produced by Unqualified users). However, a large number of utilities that use this technology appeared quite quickly outside specialized service centers for flashing the modified system software of LG mobile devices.</p>
+  <p> </p>
+  <p style="text-align: left"><img alt="USB LG LAF" height="" src="assets/images/USB_LG LAF.jpg" title="USB LG LAF" width="100%" /></p>
+  <p> </p>
+  <p><strong>Detect LAF</strong> - Detect LG Device Info (Partitions / Android version);<br />
+    <strong>Read RAW</strong> - Read dump from LG Device. If you are reading a full dump, you need select &quot;Write binary at RAW mode&quot;. Also you need to select a size of write.<br />
+    <strong>Format User</strong> - User Custom Data formating;<br />
+    <strong>Clear FRP</strong> - FRP Data erasing;<br />
+    <strong>Clear User Lock</strong> - User Password / Key erasing;<br />
+    <strong>Stop Operation</strong> - button for interrupting / canceling the performed read / clear / write operations.</p>
+  <p> </p>
+  <p>There is an alternative instruction for transferring a LG mobile device to the Download mode published on the site &quot;LG Download Mode utility and documentation&quot;.</p>
+  <ul class="Disc">
+    <li>Turn off the mobile device. </li>
+    <li>Connect the mobile device yo the computer using the <strong>USB cable</strong>:</li>
+  </ul>
+  <p> </p>
+  <p style="text-align: left"><img alt="LG Device USB" height="100%" src="assets/images/LG_DeviceUSBconnected.png" title="LG Device USB" width="" /></p>
+  <p> </p>
+  <ul class="Disc">
+    <li>Press and hold the <strong>Volume Up </strong>key.</li>
+    <li>Click on the <strong>&quot;Start&quot; (&quot;Power&quot;)</strong> button.</li>
+    <li>Wait for the mobile device to display the message <strong>&quot;Download mode&quot;</strong>.</li>
+    <li>Release the <strong>Volume Up</strong> key.</li>
+    <li>You should see the inscription on the screen of the mobile device: <strong>&quot;Firmware Update&quot;</strong>.</li>
+  </ul>
+  <p> </p>
+  <p style="text-align: left"><img height="" src="assets/images/LG_LAF_FirmwareUpdateMode.png" style="text-align: center;" width="100%" /></p>
+  <p style="text-align: center"><span style="text-align:center;"><strong style="font-weight: bold">The image on the LG phone screen switched into the “Firmware Update” mode.</strong></span></p>
+  <p> </p>
+  <p>In mobile devices with the Android operating system version 6, it is possible to save application data not in the phone’s memory, but in the cloud  <a href=" https://developer.android.com/guide/topics/data/autobackup.html"> https://developer.android.com/guide/topics/data/autobackup.html</a></p>
+  <p> </p>
+  <p>Therefore, the process of extracting user data from a mobile device may fail due to the fact that initially this data was not stored in the device. In this situation, you can use the functionality of the program “Mobile forensics”, which allows you to restore users’ names and passwords from cloud storage (or to find cloud storage tokens in your device) and access the device data stored in the clouds.</p>
+  <p> </p>
+  <p> </p>
+  <p><a href="SoftwareInterface.htm">Software Interface</a></p>
+  <p> </p>
+  <p>Copyright (c) 2020 <a href="http://easy-jtag.com/">EasyJTAG</a> by <a href="https://z3x-team.com/">Z3X-Team.</a> All Rights Reserved. </p>
 </body>
 </html>

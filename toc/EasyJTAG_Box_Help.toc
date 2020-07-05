@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <title>Table of Contents</title>
+  <page navtitle="Introdusing" href="../contents/Overview.htm"></page>
   <book navtitle="Overview">
     <book navtitle="Hardware">
       <page href="../contents/EasyJTAGbox.htm"></page>
@@ -33,35 +34,35 @@
         <page href="../contents/NANDPage.htm"></page>
       </book>
     </book>
-  </book>
-  <book navtitle="JTAG Operations">
-    <page href="../contents/EasyRepairProcedure.htm"></page>
-    <page href="../contents/CustomOperations.htm"></page>
-  </book>
-  <book navtitle="eMMC Operations">
-    <page href="../contents/HardwareConnection_eMMC.htm"></page>
-    <page navtitle="Identify And Check eMMC" href="../contents/Identify&amp;Check_eMMC.htm"></page>
-    <book navtitle="Read/Write Operation">
-      <page href="../contents/WorkWithPartitions.htm"></page>
+    <book navtitle="JTAG Operations">
+      <page href="../contents/EasyRepairProcedure.htm"></page>
+      <page href="../contents/CustomOperations.htm"></page>
     </book>
-    <page href="../contents/eMMCConfiguration.htm"></page>
-    <book navtitle="eMMC Advanced Procedures">
-      <page href="../contents/RepairEMMCFirmware.htm"></page>
+    <book navtitle="eMMC Operations">
+      <page navtitle="Hardware Connection eMMC" href="../contents/HardwareConnection_eMMC.htm"></page>
+      <page navtitle="Identify And Check eMMC" href="../contents/Identify&amp;Check_eMMC.htm"></page>
+      <book navtitle="Read/Write Operation">
+        <page href="../contents/WorkWithPartitions.htm"></page>
+      </book>
+      <page href="../contents/eMMCConfiguration.htm"></page>
+      <book navtitle="eMMC Advanced Procedures">
+        <page href="../contents/RepairEMMCFirmware.htm"></page>
+      </book>
     </book>
-  </book>
-  <book navtitle="NAND Operations">
-    <page href="../contents/HardwareConnection_UFS.htm"></page>
-    <page href="../contents/ApplePPNiConfig.htm"></page>
-  </book>
-  <book navtitle="UFS Operations">
-    <page href="../contents/HardwareConnection_UFS.htm"></page>
-    <page navtitle="Identify And Check UFS" href="../contents/Identify&amp;Check_UFS.htm"></page>
-    <book navtitle="UFS Read/Write Operation">
-      <page href="../contents/WorkWithPartitions.htm"></page>
+    <book navtitle="NAND Operations">
+      <page href="../contents/HardwareConnection_UFS.htm"></page>
+      <page href="../contents/ApplePPNiConfig.htm"></page>
     </book>
-    <page href="../contents/UFSConfiguration.htm"></page>
-  </book>
-  <book navtitle="SPI Operations">
-    <page href="../contents/HardwareConnection_SPI.htm"></page>
+    <book navtitle="UFS Operations">
+      <page href="../contents/HardwareConnection_UFS.htm"></page>
+      <page navtitle="Identify And Check UFS" href="../contents/Identify&amp;Check_UFS.htm"></page>
+      <book navtitle="UFS Read/Write Operation">
+        <page href="../contents/WorkWithPartitions.htm"></page>
+      </book>
+      <page href="../contents/UFSConfiguration.htm"></page>
+    </book>
+    <book navtitle="SPI Operations">
+      <page href="../contents/HardwareConnection_SPI.htm"></page>
+    </book>
   </book>
 </map>

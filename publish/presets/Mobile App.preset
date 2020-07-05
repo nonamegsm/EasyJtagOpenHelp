@@ -1,86 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <preset>
   
+
 <content>
     
+
 <index type="boolean">true</index>
     
+
 <toc>
       
-<path>../../toc/Introdusing.toc</path>
+
+<path>../../toc/EasyJTAG_Box_Help.toc</path>
       
+
 <name>Default</name>
     </toc>
     
+
 <glossary>
       
+
 <path>../../glossary/Default.glo</path>
       
+
 <name>Default</name>
     </glossary>
     
+
 <masterpage></masterpage>
     
+
 <brs type="array"></brs>
   </content>
   
+
 <starterPage>index.html</starterPage>
   
+
 <search>
     
+
 <context type="boolean">true</context>
     
+
 <contextLimit>100</contextLimit>
     
+
 <suggestion type="boolean">true</suggestion>
     
+
 <fuzzy type="boolean">true</fuzzy>
     
+
 <glossary type="boolean">true</glossary>
   </search>
   
+
 <sitemap>
     
+
 <use type="boolean">true</use>
     
+
 <changeFrequency></changeFrequency>
     
+
 <helpBaseURL></helpBaseURL>
   </sitemap>
   
+
 <skin></skin>
   
+
 <name>Mobile App</name>
   
+
 <type>mobileapp</type>
   
+
 <title>Blank Project</title>
   
+
 <defaultTopic>
     
+
 <name>First_Topic.htm</name>
     
+
 <path>../../contents/First_Topic.htm</path>
   </defaultTopic>
   
+
 <mobileapp>
     
+
 <configfile>
       
+
 <name>Mobile App</name>
       
+
 <path>Mobile App/config.json</path>
     </configfile>
     
+
 <android type="boolean">true</android>
     
+
 <iOS type="boolean">false</iOS>
   </mobileapp>
   
+
 <glosstermEffect type="number">0</glosstermEffect>
   
+
 <createThumbNails type="boolean">true</createThumbNails>
   
+
 <outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/Mobile App</outputPath>
 </preset>

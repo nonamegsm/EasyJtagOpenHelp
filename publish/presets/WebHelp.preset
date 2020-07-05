@@ -1,72 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <preset>
   
+
 <content>
     
+
 <index type="boolean">true</index>
     
+
 <toc>
       
-<path>../../toc/Introdusing.toc</path>
+
+<path>../../toc/EasyJTAG_Box_Help.toc</path>
       
+
 <name>Default</name>
     </toc>
     
+
 <glossary>
       
+
 <path>../../glossary/Default.glo</path>
       
+
 <name>Default</name>
     </glossary>
     
+
 <masterpage></masterpage>
     
+
 <brs type="array"></brs>
     
+
 <mapFiles type="array"></mapFiles>
   </content>
   
+
 <starterPage>index.htm</starterPage>
   
+
 <search>
     
+
 <context type="boolean">false</context>
     
+
 <contextLimit>100</contextLimit>
     
+
 <suggestion type="boolean">true</suggestion>
     
+
 <fuzzy type="boolean">true</fuzzy>
     
+
 <glossary type="boolean">true</glossary>
   </search>
   
+
 <sitemap>
     
+
 <use type="boolean">false</use>
     
+
 <changeFrequency></changeFrequency>
     
+
 <helpBaseURL></helpBaseURL>
   </sitemap>
   
+
 <name>WebHelp</name>
   
+
 <type>webhelp</type>
   
+
 <title>Blank Project</title>
   
+
 <defaultTopic>
     
+
 <name>First_Topic.htm</name>
     
+
 <path>../../contents/First_Topic.htm</path>
   </defaultTopic>
   
+
 <glosstermEffect type="number">0</glosstermEffect>
   
+
 <createThumbNails type="boolean">false</createThumbNails>
   
+
 <outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/WebHelp</outputPath>
 </preset>

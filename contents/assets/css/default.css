@@ -99,6 +99,9 @@ ol.seealso-list {
   padding-left: 0;
   margin-left: 0;
   list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: undefined;
 }
 a.seealso-list-item {
   
@@ -106,7 +109,10 @@ a.seealso-list-item {
 
 p.reltopics-caption {
   font-weight: bold;
-	font-size: 12pt;
+	font-size: 11.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	text-align: undefined;
 }
 ol.reltopics-list {
   padding-left: 0;
@@ -124,4 +130,76 @@ ul.Circle {
 }
 ol.Decimal {
 	list-style-type: decimal;
+}
+ol.RoundSquare {
+	list-style: disc;
+}
+ol.RoundSquare>li>ol {
+	list-style: square;
+}
+ol.RoundSquare>li>ol>li>ol {
+	list-style: circle;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol {
+	list-style: disc;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol>li>ol {
+	list-style: square;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
+	list-style: circle;
+}
+ol.NestedNumbering {
+	list-style: none;
+	counter-reset: item1;
+}
+ol.NestedNumbering>li>ol {
+	list-style: none;
+	counter-reset: item2;
+}
+ol.NestedNumbering>li>ol>li:before {
+	counter-increment: item2;
+	content: counter(item1, decimal)"."counter(item2, decimal)".";
+	padding-right: 0.5rem;
+}
+ol.NestedNumbering>li:before {
+	counter-increment: item1;
+	content: counter(item1, decimal)".";
+	padding-right: 0.5rem;
+}
+ol.NestedNumbering>li>ol>li>ol {
+	list-style: none;
+	counter-reset: item3;
+}
+ol.NestedNumbering>li>ol>li>ol>li:before {
+	counter-increment: item3;
+	content: counter(item1, decimal)"."counter(item2, decimal)"."counter(item3, decimal)".";
+	padding-right: 0.5rem;
+}
+ol.NestedNumbering>li>ol>li>ol>li>ol {
+	counter-reset: item4;
+	list-style: none;
+}
+ol.NestedNumbering>li>ol>li>ol>li>ol>li:before {
+	counter-increment: item4;
+	content: counter(item1, decimal)"."counter(item2, decimal)"."counter(item3, decimal)"."counter(item4, decimal)".";
+	padding-right: 0.5rem;
+}
+ol.NestedNumbering>li>ol>li>ol>li>ol>li>ol {
+	counter-reset: item5;
+	list-style: none;
+}
+ol.NestedNumbering>li>ol>li>ol>li>ol>li>ol>li:before {
+	counter-increment: item5;
+	content: counter(item1, decimal)"."counter(item2, decimal)"."counter(item3, decimal)"."counter(item4, decimal)"."counter(item5, decimal)".";
+	padding-right: 0.5rem;
+}
+ol.NestedNumbering>li>ol>li>ol>li>ol>li>ol>li>ol {
+	counter-reset: item6;
+	list-style: none;
+}
+ol.NestedNumbering>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+	counter-increment: item6;
+	content: counter(item1, decimal)"."counter(item2, decimal)"."counter(item3, decimal)"."counter(item4, decimal)"."counter(item5, decimal)"."counter(item6, decimal)".";
+	padding-right: 0.5rem;
 }

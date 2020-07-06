@@ -203,3 +203,7 @@ ol.NestedNumbering>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
 	content: counter(item1, decimal)"."counter(item2, decimal)"."counter(item3, decimal)"."counter(item4, decimal)"."counter(item5, decimal)"."counter(item6, decimal)".";
 	padding-right: 0.5rem;
 }
+table.img-table, table.img-table tr, table.img-table td {
+	border: none;
+	display: block;
+}

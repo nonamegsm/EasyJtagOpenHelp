@@ -1,10 +1,13 @@
-﻿<html>
-<head>
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>﻿
+
 <title>eMMC Page</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
 <h1>eMMC Page</h1>
 <p><font size="3">The <strong>eMMC Page</strong> - work directly with the eMMC
 chip connected to the interface.</font></p>
@@ -12,91 +15,91 @@ chip connected to the interface.</font></p>
 eMMC</strong> window contains the <strong>Detect</strong> button - check the
 connection to eMMC and the settings of the connection interface:</font></p>
 <p><font size="3"><strong>Box Pinout Mode</strong> - select the type of
-connection eMMC (ISP / E-Socket);<br>
-<strong>eMMC CLK Rate</strong> - frequency of work with eMMC;<br>
+connection eMMC (ISP / E-Socket);<br/>
+<strong>eMMC CLK Rate</strong> - frequency of work with eMMC;<br/>
 <strong>eMMC Voltage</strong> - select the voltage IO eMMC, it must correspond
-to the hardware power supply IO eMMC (fixed for E-Socket 2.8v);<br>
+to the hardware power supply IO eMMC (fixed for E-Socket 2.8v);<br/>
 <strong>eMMC Bus Width</strong> - selection of the operating mode with eMMC by
 the number of data lines (1/4/8);</font></p>
 <p><font size="3"><strong>Show Less Debug Data</strong> - allows you to reduce
-the log without displaying unused information eMMC in the log window;<br>
+the log without displaying unused information eMMC in the log window;<br/>
 <strong>Read soft Partition</strong> - determine and log the availability and
-information about eMMC partitions by clicking on the Detect button;<br>
+information about eMMC partitions by clicking on the Detect button;<br/>
 <strong>HiPower (TM) CLK Drive mode</strong> - activation of the HiPower (TM)
-CLK mode for connecting to a working device (for details, see "connection
-information"), enable only when using this mode.</font></p>
-<p><img src="images/eMMC.jpg"></p>
-<p><font size="3">The lower part of the window contains&nbsp;<strong>5</strong>
+CLK mode for connecting to a working device (for details, see &quot;connection
+information&quot;), enable only when using this mode.</font></p>
+<p><img src="images/eMMC.jpg"/></p>
+<p><font size="3">The lower part of the window contains <strong>5</strong>
 tabs of working with eMMC:</font></p>
 <p><font size="3"><strong>1)</strong> <strong>Flasher</strong> - the main
 window for reading / deleting / writing data from / to eMMC;</font></p>
-<p><img src="images/eMMC_Flasher.jpg"></p>
+<p><img src="images/eMMC_Flasher.jpg"/></p>
 <p><font size="3"><strong>ROM to access:</strong> - selection of the hardware
-of the eMMC area;<br>
-<strong>Preset</strong> - preset sizes for Start / Lenght;<br>
-<strong>Start</strong> - the starting address of the area;<br>
-<strong>Lenght</strong> -&nbsp;is the length of the area;</font></p>
+of the eMMC area;<br/>
+<strong>Preset</strong> - preset sizes for Start / Lenght;<br/>
+<strong>Start</strong> - the starting address of the area;<br/>
+<strong>Lenght</strong> - is the length of the area;</font></p>
 <p><font size="3"><strong>Write All Roms</strong> - an option for recording
-several files with "one button", active when selecting "Write all eMMC Regions
-at once";<br>
+several files with &quot;one button&quot;, active when selecting &quot;Write all eMMC Regions
+at once&quot;;<br/>
 <strong>Read eMMC Card</strong> - reading from eMMC into a file of the selected
-area;<br>
+area;<br/>
 <strong>Write eMMC Card</strong> - record in eMMC the selected area from the
-file selected in "Image";<br>
-<strong>Erase eMMC Card</strong> - erases the selected area of eMMC;<br>
+file selected in &quot;Image&quot;;<br/>
+<strong>Erase eMMC Card</strong> - erases the selected area of eMMC;<br/>
 <strong>Stop Operation</strong> - button for interrupting / canceling the
 performed read / erase / write operations;</font></p>
-<p><font size="3"><strong>Image</strong> - select a file for recording "Write
-eMMC Card";<br>
+<p><font size="3"><strong>Image</strong> - select a file for recording &quot;Write
+eMMC Card&quot;;<br/>
 <strong>ROM1 / ROM2 / ROM3 / extCSD</strong> - select files to write to the
-appropriate sections in the "Write All Roms" mode;</font></p>
+appropriate sections in the &quot;Write All Roms&quot; mode;</font></p>
 <p><font size="3"><strong>Limit write lengh</strong> - limit the write limit in
-eMMC to its size;<br>
+eMMC to its size;<br/>
 <strong>Verify write / erase operation</strong> - enable verification of the
-operation to erase the recording (slows down the operation by half);<br>
+operation to erase the recording (slows down the operation by half);<br/>
 <strong>Upload Pinout on server</strong> - button for sending to the server
-the&nbsp;ISP pinout&nbsp; from user.</font></p>
-<p>&nbsp;</p>
+the ISP pinout  from user.</font></p>
+<p> </p>
 <p><font size="3"><strong>2) eMMC BOOT Cfg</strong> - configuring eMMC boot
 modes through editing extCSD registers.</font></p>
-<p><img src="images/eMMC_BOOT Cfg.jpg"></p>
+<p><img src="images/eMMC_BOOT Cfg.jpg"/></p>
 <p><font size="3"><strong>Boot_Partition_EN</strong> - selection of the boot
-partition from the eMMC (setting the bit register 179 extCSD);<br>
+partition from the eMMC (setting the bit register 179 extCSD);<br/>
 <strong>Boot_ACK</strong> - setting the automatic boot sending mode to the CPU
-(setting the bit register 179 extCSD);<br>
+(setting the bit register 179 extCSD);<br/>
 <strong>Set Partition Config:</strong> - record the selected value of register
-179&nbsp;to extCSD;</font></p>
+179 to extCSD;</font></p>
 <p><font size="3"><strong>Boot_Mode</strong> - selection of the Data bus mode
-when working with Boot eMMC (setting the bit register 177 extCSD);<br>
+when working with Boot eMMC (setting the bit register 177 extCSD);<br/>
 <strong>Boot_Bus_Width</strong> - selection of the width of the Data bus when
-working with Boot eMMC (setting the bit register 177 extCSD);<br>
+working with Boot eMMC (setting the bit register 177 extCSD);<br/>
 <strong>Reset_Boot_Bus_Width</strong> - selects the Data bus reset mode when
-working with Boot eMMC (setting the bit register 177 extCSD);<br>
+working with Boot eMMC (setting the bit register 177 extCSD);<br/>
 <strong>Set Boot Width Config:</strong> - record the selected value of register
 177 in extCSD;</font></p>
 <p><font size="3"><strong>Ext_CSD_RST_N_FUNC</strong> - selection of the
 operating mode of the physical signal RST_N eMMC (setting the bit register 162
-extCSD);<br>
+extCSD);<br/>
 <strong>Set RST Conf</strong> - record the selected value of register 162 in
 extCSD;</font></p>
 <p><font size="3"><strong>Set i9300 / N7100 boot config</strong> - write
 registers 179/177 (with values ​​0x48 / 0x01, respectively) for Exynos
 processors (Samsung).</font></p>
-<p>&nbsp;</p>
+<p> </p>
 <p><font size="3"><strong>3) Advanced Options</strong> - work with eMMC, not
 included in other types of work (by tabs).</font></p>
 <p><font size="3"><strong>Android FRP clear</strong> - removal of FRP in the
-firmware recorded in eMMC;<br>
+firmware recorded in eMMC;<br/>
 <strong>Clear PIN / GTS / PASS</strong> - removal of the request for password
-and graphic key in Android firmware recorded in eMMC;<br>
+and graphic key in Android firmware recorded in eMMC;<br/>
 <strong>Android FDI Info</strong> - information about the presence of encrypted
 partitions and FRP in the firmware recorded in eMMC;</font></p>
 <p><font size="3"><strong>Dump eMMC FW</strong> - reading Samsung eMMC internal
-firmware&nbsp;for sending to the server;<br>
+firmware for sending to the server;<br/>
 <strong>Update eMMC FW</strong> - updating Samsung eMMC internal
-firmware&nbsp;or restoring Samsung eMMC internal firmware ( by
+firmware or restoring Samsung eMMC internal firmware ( by
 Testpoint).</font></p>
-<p><img src="images/eMMC_Advanced.jpg"></p>
+<p><img src="images/eMMC_Advanced.jpg"/></p>
 <p><font style="BACKGROUND-COLOR: #fafafa" color="#2f4f4f" size="3"><strong><font color="#000000">Custom Operation:</font></strong></font></p>
 <p><font style="BACKGROUND-COLOR: #fafafa" color="#000000" size="3"><strong>-
 Universal: Repair extCSD</strong> - recording extCSD backups in
@@ -108,7 +111,7 @@ work on some eMMC);</font></p>
 SAMSUNG: Read S.M.A.R.T. Report</strong> - reading information S.M.A.R.T. from
 Samsung eMMC;</font></p>
 <p><font style="BACKGROUND-COLOR: #fafafa" color="#000000" size="3"><strong>-
-SAMSUNG: VTU Name '000000' Repair</strong> - restoration of Samsung eMMC
+SAMSUNG: VTU Name &#39;000000&#39; Repair</strong> - restoration of Samsung eMMC
 KMVTU000LM-B503, which are defined without Testpoint with eMMC NAME:
 00000;</font></p>
 <p><font style="BACKGROUND-COLOR: #fafafa" color="#000000" size="3"><strong>-
@@ -125,7 +128,7 @@ SAMSUNG: CID Editor</strong> - CID editor for Samsung eMMC;</font></p>
 <p><font style="BACKGROUND-COLOR: #fafafa" color="#000000" size="3"><strong>-
 SANDISK: Read S.M.A.R.T. Report</strong> - reading information S.M.A.R.T. from
 eMMC Sandisk.</font></p>
-<p>&nbsp;</p>
+<p> </p>
 <p><font size="3"><strong>SD Tool</strong> - for eMMC or SDcard connected as
 eMMC:</font></p>
 <p><font size="3"><strong>Password</strong> - password field for eMMC /
@@ -138,12 +141,12 @@ all data on eMMC / SDcard;</font></p>
 eMMC / SDcard (in development);</font></p>
 <p><font size="3"><strong>Universal Format Repair</strong> - universal format
 recovery.</font></p>
-<p>&nbsp;</p>
+<p> </p>
 <p><font size="3"><strong>4) Hardware Partitions</strong> - creation and
 configuration of eMMC hardware partitions (ROM2 / 3, GP1-4).</font></p>
-<p><img src="images/eMMC_HW Partitions.jpg"></p>
+<p><img src="images/eMMC_HW Partitions.jpg"/></p>
 <p><font size="3">Consists of two sections:</font></p>
-<p><font size="3"><strong>Samsung Boot+RPMB sizes</strong> - allows&nbsp;user
+<p><font size="3"><strong>Samsung Boot+RPMB sizes</strong> - allows user
 to resize Boot1 / 2 (ROM2 / 3) and RPMB areas only for Samsung eMMC revisions
 below 5.1 (not including rev 5.1).</font></p>
 <p><font size="3"><strong>ROM2, ROM2 size, RPMB Block Size</strong> - selection
@@ -160,14 +163,14 @@ selected ones, this means that this microcircuit does not support the selected
 sizes and the operation should be repeated, reducing the sizes.</font></p>
 <p><font size="3"><strong>JEDEC GP Partition sizes</strong> - creation of
 partitions GP1-4 for chips in which the value of the extCSD register (155 /
-0x9B) - PARTITON_SETTING_COMPLETED is equal to "0x00".</font></p>
-<p><font size="3"><br>
+0x9B) - PARTITON_SETTING_COMPLETED is equal to &quot;0x00&quot;.</font></p>
+<p><font size="3"><br/>
 <strong><font color="#ff0000">Important:</font></strong> the creation of
-partitions "GP1-4" is due to the reduction in the size of "User / ROM1" (cut
+partitions &quot;GP1-4&quot; is due to the reduction in the size of &quot;User / ROM1&quot; (cut
 off from it).</font></p>
 <p><font size="3"><strong>GP1-4 Part Size</strong> - selection of sizes of
 future sections;</font></p>
-<p><font size="3"><br>
+<p><font size="3"><br/>
 <strong>ENH GP1-4</strong> - increases the reliability of the partition for MLC
 / TLC memory by switching it to SLC / MLC mode. The amount of memory allocated
 for the partition is 2 times larger than the selected size;</font></p>
@@ -182,24 +185,24 @@ beginning of the User / ROM1 section into Enhanced mode, similar to ENH GP1-4
 the same way as WR_REL GP1-4 for the User / ROM1 section.</font></p>
 <p><font size="3"><strong>Test Setting</strong> - write selected parameters to
 extCSD, without setting the extCSD register (155 / 0x9B) -
-PARTITON_SETTING_COMPLETED to "0x00";</font></p>
+PARTITON_SETTING_COMPLETED to &quot;0x00&quot;;</font></p>
 <p><font size="3"><strong>Write to extCSD</strong> - the final record of the
 selected parameters in extCSD, with the extCSD register (155 / 0x9B) -
-PARTITON_SETTING_COMPLETED set to "0x01", after which operations to change the
-areas of "GP1-4" can not be changed.</font></p>
-<p>&nbsp;</p>
-<p><font size="3"><strong>5)&nbsp;OTP</strong> - One Time Programmable,
-contains <strong>Info&nbsp;</strong> panel, <strong>Read and Write</strong>
-panel and&nbsp;<strong>OTP Config</strong>&nbsp;panel.</font></p>
-<p><img src="images/eMMC_OTP.jpg"></p>
+PARTITON_SETTING_COMPLETED set to &quot;0x01&quot;, after which operations to change the
+areas of &quot;GP1-4&quot; can not be changed.</font></p>
+<p> </p>
+<p><font size="3"><strong>5) OTP</strong> - One Time Programmable,
+contains <strong>Info </strong> panel, <strong>Read and Write</strong>
+panel and <strong>OTP Config</strong> panel.</font></p>
+<p><img src="images/eMMC_OTP.jpg"/></p>
 <p><font size="3"><strong>Info panel</strong> contain <strong>Scan for
 OTP</strong> button and <strong>OTP Offset</strong> box.</font></p>
-<p><font size="3"><strong>Scan for OTP</strong>&nbsp; - scans entire eMMC
+<p><font size="3"><strong>Scan for OTP</strong>  - scans entire eMMC
 address space for OTP (One Time Programmable) area or multiple OTP areas.
 Results are printed in a log window if such areas detected.</font></p>
 <p><font size="3"><strong>Read and Write</strong> panel contain <strong>OTP
-Data file</strong> box and&nbsp; <strong>Read&nbsp;</strong> <strong>OTP
-Region,</strong> <strong>Write&nbsp;OTP Region</strong> buttons:</font></p>
+Data file</strong> box and  <strong>Read </strong> <strong>OTP
+Region,</strong> <strong>Write OTP Region</strong> buttons:</font></p>
 <p><font size="3"><strong>OTP Data file</strong> - box selection for writing
 OTP area of eMMC;</font></p>
 <p><font size="3"><strong>Read OTP Region</strong> button - reads contents of
@@ -208,10 +211,10 @@ OTP are in selected file;</font></p>
 OTP region by provided address. Operation is possible only if OTP region is not
 locked permanently.</font></p>
 <p><font size="3"><strong>OTP Config</strong> panel:</font></p>
-<p><font size="3"><strong>Lock&nbsp;OTP</strong> -&nbsp;&nbsp;set protection
+<p><font size="3"><strong>Lock OTP</strong> -  set protection
 flag for provided in Offset box address.</font></p>
 <p><font size="3"><strong>Unlock OTP</strong> - clear protection flag for
-provided on offset box address.&nbsp;Possible only if protection flag is not
+provided on offset box address. Possible only if protection flag is not
 permanent. Otherwise can be cleared only by eMMC 4.5 firmware update of factory
 reset on Samsung eMMC chips.</font></p>
 <p><font size="3"><strong>Temporary:</strong> Write and Erase prevention scheme
@@ -222,7 +225,7 @@ the device to reboot occurs or the device is reset using the reset
 pin.</font></p>
 <p><font size="3"><strong>Permanent:</strong> Write and Erase prevention
 scheme, which once enabled, cannot be reversed.</font></p>
-<p>&nbsp;</p>
+<p> </p>
 <table class="box bottomline">
 <tbody>
 <tr>
@@ -231,11 +234,7 @@ scheme, which once enabled, cannot be reversed.</font></p>
 </tbody>
 </table>
 <div id="nstext">
-<hr>
+<hr/>
 </div>
-<div class="copyright"><em>Copyright (c) 2020</em> <a href="http://easy-jtag.com/" target="_blank"><em>EasyJtag</em></a> <em>by</em> <a href="https://z3x-team.com/" target="_blank"><em>Z3X-Team</em></a><em>. All Rights Reserved.</em></div>
-<script type="text/javascript" src="js/custom.js">
-</script>
-</body>
-</html>
 
+</body></html>

@@ -28,11 +28,11 @@
   <title>EasyJTAG Box Help</title>
   <type>chm</type>
   <glosstermEffect></glosstermEffect>
-  <outputPath>output/</outputPath>
+  <outputPath>C:/Users/vano4/Documents/EASY-JTAG/Help/output/</outputPath>
   <name>Microsoft HTML Help</name>
   <starterPage>EasyJTAG_Box_Help.chm</starterPage>
   <defaultTopic>
-    <name>Overview.htm</name>
+    <name>Overview</name>
     <path>../../contents/Overview.htm</path>
   </defaultTopic>
   <encoding></encoding>

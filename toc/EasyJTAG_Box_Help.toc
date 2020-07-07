@@ -5,8 +5,8 @@
   <book navtitle="Overview">
     <book navtitle="Hardware">
       <page href="../contents/EasyJTAGbox.htm"></page>
-      <book navtitle="EasyJTAG Plus Box">
-        <page href="../contents/EasyJTAGPlusBox.htm"></page>
+      <book navtitle="EasyJTAG Plus box">
+        <page navtitle="EasyJTAG Plus box" href="../contents/EasyJTAGPlusBox.htm"></page>
         <page href="../contents/BoxComplectation.htm"></page>
         <book navtitle="Additional Instruments">
           <page href="../contents/eMMCSockets.htm"></page>

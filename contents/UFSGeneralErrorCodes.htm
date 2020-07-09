@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>UFS General Error Codes</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="assets/css/default.css" type="text/css" />
+</head>
+<body>
+  <h1>UFS General Error Codes</h1>
+  <h2>Basic Header (cont’d)</h2>
+  <p><span style="text-align:justify;">The SENSE KEY is used for normal error handling during operation.</span></p>
+  <p><span style="text-align:justify;">The ADDITIONAL SENSE CODE (ASC) and the ADDITIONAL SENSE CODE QUALIFIER (ASCQ) are mainly used for detailed diagnostic and logging (post-mortem) information. If the device server does not have further information related to the error or exception condition, these fields shall be set to zero. Generally, except for a certain few, they’re not mandatory and they may be set to zero, which means no additional information provided. See [SPC] for a list of additional sense codes and additional sense code qualifiers.</span></p>
+  <h2>Sense Key</h2>
+  <p>The Sense Key value provides a means to categorize errors and exceptional conditions. The Sense Key indicates a particular type of error. The Additional Sense Code and Additional Sense Code Qualifier can be used to further detail and describe the condition that the Sense Key indicates. Sense Keys are specific to the action performed by a particular command.</p>
+  <p> </p>
+  <table border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse;" width="100%">
+    <colgroup>
+      <col width="50%" />
+      <col width="50%" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td colspan="2" style="text-align: center"><strong>Sence Key</strong></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>Value</strong></td>
+        <td style="text-align: center"><strong>Description</strong></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x00h</strong></td>
+        <td style="text-align: justify"><strong>NO SENS</strong><strong>E</strong> – Indicates that there is no specific sense key information to be reported. This would be the result of a successfully executed command.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x01h</strong></td>
+        <td style="text-align: justify"><strong>RECOVERED ERROR</strong> – Indicates that the last command completed successfully after error recovery actions were performed by the device server. Further details may be determined by examining the additional sense bytes (ASC and ASCQ fields).</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x02h</strong></td>
+        <td style="text-align: justify"><strong>NOT READY</strong> – Indicates that the logical unit addressed cannot be accessed at this time.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x03h</strong></td>
+        <td style="text-align: justify"><strong>MEDIUM ERROR</strong> – Indicates that the last command was unsuccessful due to a non- recoverable error condition due to a flaw in the media or failed error recovery.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x04h</strong></td>
+        <td style="text-align: justify"><strong>HARDWARE ERROR</strong> – Indicates that the the device server detected a non-recoverable hardware error.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x05h</strong></td>
+        <td style="text-align: justify"><strong>ILLEGAL REQUEST</strong> – Indicates that there was an illegal parameter value in a command descriptor block or within additional parameter data supplied with some commands. If the device server detects an invalid parameter in the command descriptor block then it shall terminate the command without altering the media.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x06h</strong></td>
+        <td style="text-align: justify"><strong>UNIT ATTENTION</strong> – Indicates that the unit has been reset or unexpectedly powered-on or that removable media has changed.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x07h</strong></td>
+        <td style="text-align: justify"><strong>DATA PROTECT</strong> – Indicates that a command that reads or writes the medium was attempted on a block that is protected from this operation. The read or write operation shall not be performed.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x08h</strong></td>
+        <td style="text-align: justify"><strong>BLANK CHECK</strong> - Indicates that blank or unformatted media was encountered while reading or writing.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x09h</strong></td>
+        <td style="text-align: justify"><strong>VENDOR SPECIFIC</strong> – This Sense Key is available for reporting vendor specific error or exceptional conditions.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x0Ah</strong></td>
+        <td style="text-align: justify"><strong>COPY ABORTED</strong> – Not applicable for UFS device. Reserved.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x0Bh</strong></td>
+        <td style="text-align: justify"><strong>ABORTED COMMAND</strong> – Indicates that the device server aborted the execution of the command. The application client may be able to recover by retrying the command.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x0Ch</strong></td>
+        <td style="text-align: justify"><strong>Reserved.</strong></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x0Dh</strong></td>
+        <td style="text-align: justify"><strong>VOLUME OVERFLOW</strong> - Indicates that a buffered peripheral device has reached the end-of- partition and data may remain in the buffer that has not been written to the medium.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x0Eh</strong></td>
+        <td style="text-align: justify"><strong>MISCOMPARE</strong> – Indicates that the source data did not match the data read from the media.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>0x0Fh</strong></td>
+        <td style="text-align: justify"><strong>Reserved.</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <p> </p>
+  <p><a href="Introduce.htm">Introduce</a></p>
+  <p> </p>
+</body>
+</html>

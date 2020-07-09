@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <title>Table of Contents</title>
-  <page navtitle="Introduse" href="../contents/Introduse.htm"></page>
+  <page navtitle="Introduce" href="../contents/Introduce.htm"></page>
   <book navtitle="Overview">
     <book navtitle="Hardware">
       <page href="../contents/EasyJTAGbox.htm"></page>
@@ -54,12 +54,14 @@
       <page href="../contents/ApplePPNiConfig.htm"></page>
     </book>
     <book navtitle="UFS Operations">
+      <page navtitle="What is the UFS Memory" href="../contents/WhatIsTheUFSMemory.htm"></page>
       <page href="../contents/HardwareConnection_UFS.htm"></page>
       <page navtitle="Identify And Check UFS" href="../contents/IdentifyAndCheck_UFS.htm"></page>
+      <page href="../contents/UFSConfiguration.htm"></page>
       <book navtitle="UFS Read/Write Operation">
         <page href="../contents/WorkWithPartitions.htm"></page>
+        <page navtitle="UFS General Error Codes" href="../contents/UFSGeneralErrorCodes.htm"></page>
       </book>
-      <page href="../contents/UFSConfiguration.htm"></page>
     </book>
     <book navtitle="SPI Operations">
       <page href="../contents/HardwareConnection_SPI.htm"></page>

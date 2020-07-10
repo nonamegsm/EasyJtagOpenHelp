@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>What is the JTAG</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="assets/css/default.css" type="text/css" />
+</head>
+<body>
+  <h1>What is the JTAG</h1>
+  <p><strong>JTAG</strong> is a hardware interface for programming, testing and debugging printed circuit boards.</p>
+  <p> </p>
+  <p>Joint Test Action Group (JTAG) is the common name used for a debugging, programming, and testing interface typically found on microcontrollers, ASICs, and FPGAs. It enables all components with this interface to be tested, programmed, and/or debugged using a single connector on a PC board which can daisy chain them together.</p>
+  <p> </p>
+  <p>The JTAG interface has a number of lines that are used and together these are collectively known as the Test Access Port, TAP. This JTAG port is used for JTAG control as well as providing connections by which the serial data may enter and leave the board.</p>
+  <p> </p>
+  <h2>Test Access Port (TAP)</h2>
+  <p>The boundary-scan control signals, collectively referred to as the Test Access Port (TAP), define a serial protocol for scan-based devices.</p>
+  <p>There are five pins:</p>
+  <ol class="Decimal">
+    <li><strong>TCK (clock)</strong> synchronizes the internal state machine operations.</li>
+    <li><strong>TMS (mode)</strong> select is sampled at the rising edge of TCK to determine the next state.</li>
+    <li><strong>TDI (data in)</strong> is sampled at the rising edge of TCK and shifted into the device&#39;s test or programming logic when the internal state machine is in the correct state.</li>
+    <li><strong>TDO (data out)</strong> represents the data shifted out of the device&#39;s test or programming logic and is valid on the falling edge of TCK when the internal state machine is in the correct state.</li>
+    <li><strong>TRST (reset)</strong>, optional, when driven low, resets the internal state machine.</li>
+  </ol>
+  <p> </p>
+  <p>The TCK, TMS, and TRST input pins drive a 16-state TAP controller state machine. The TAP controller manages the exchange of data and instructions. The controller advances to the next state based on the value of the TMS signal at each rising edge of TCK.</p>
+  <p> </p>
+  <p>With the proper wiring, you can test multiple ICs or boards simultaneously. An external file, known as a Boundary-Scan Description Language (BSDL) file, defines the capabilities of any single device&#39;s boundary-scan logic.</p>
+  <h2>JTAG Connector</h2>
+  <p>There is no standard JTAG connector or pinout, so suppliers are able to define their own.</p>
+  <p> </p>
+  <p> </p>
+  <p><a href="Introduce.htm">Introduce</a></p>
+</body>
+</html>

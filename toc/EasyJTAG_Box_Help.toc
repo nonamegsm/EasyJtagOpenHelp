@@ -35,6 +35,7 @@
       </book>
     </book>
     <book navtitle="JTAG Operations">
+      <page href="../contents/WhatIsTheJTAG.htm"></page>
       <page href="../contents/EasyRepairProcedure.htm"></page>
       <page href="../contents/CustomOperations.htm"></page>
     </book>

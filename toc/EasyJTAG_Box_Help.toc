@@ -16,7 +16,7 @@
       </book>
     </book>
     <book navtitle="Software">
-      <page navtitle="Installation And Drivers" href="../contents/Installation&amp;Drivers.htm"></page>
+      <page navtitle="Installation And Drivers" href="../contents/InstallationAndDrivers.htm"></page>
       <page navtitle="EasyJTAG Classic Software (eMMC File Manager addon)" href="../contents/eMMCFileManagerAddon.htm"></page>
       <page href="../contents/EasyJTAGPlusSoftware.htm"></page>
       <book navtitle="Interface">

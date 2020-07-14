@@ -40,10 +40,12 @@
       <page href="../contents/CustomOperations.htm"></page>
     </book>
     <book navtitle="eMMC Operations">
+      <page href="../contents/WhatIsTheeMMC.htm"></page>
       <page navtitle="Hardware Connection eMMC" href="../contents/HardwareConnection_eMMC.htm"></page>
       <page navtitle="Identify And Check eMMC" href="../contents/IdentifyAndCheck_eMMC.htm"></page>
       <book navtitle="Read/Write Operation">
         <page href="../contents/WorkWithPartitions.htm"></page>
+        <page navtitle="eMMC General Errors" href="../contents/EMMCGeneralErrors.htm"></page>
       </book>
       <page href="../contents/eMMCConfiguration.htm"></page>
       <book navtitle="eMMC Advanced Procedures">
@@ -51,7 +53,9 @@
       </book>
     </book>
     <book navtitle="NAND Operations">
+      <page href="../contents/UnderstandingNANDFlash.htm"></page>
       <page href="../contents/HardwareConnection_NAND.htm"></page>
+      <page href="../contents/NANDChipsPinout.htm"></page>
       <page href="../contents/ApplePPNiConfig.htm"></page>
     </book>
     <book navtitle="UFS Operations">

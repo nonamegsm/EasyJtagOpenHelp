@@ -72,4 +72,9 @@
       <page href="../contents/HardwareConnection_SPI.htm"></page>
     </book>
   </book>
+  <book navtitle="Troubleshooting">
+    <book navtitle="Common Problems"></book>
+    <book navtitle="eMMC Connection Problems"></book>
+    <book navtitle="UFS Connection Problems"></book>
+  </book>
 </map>

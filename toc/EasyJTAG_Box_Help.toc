@@ -74,7 +74,9 @@
   </book>
   <book navtitle="Troubleshooting">
     <book navtitle="Common Problems"></book>
-    <book navtitle="eMMC Connection Problems"></book>
+    <book navtitle="eMMC Connection Problems">
+      <page href="../contents/Common_eMMC_Detection_Errors.htm"></page>
+    </book>
     <book navtitle="UFS Connection Problems"></book>
   </book>
 </map>

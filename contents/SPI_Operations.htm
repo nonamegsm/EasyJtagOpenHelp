@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>﻿
+
+<title>UFS Operations</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+<h1>UFS Operations</h1>
+<h2>UFS General Error Codes</h2>
+<p><strong>Basic Header (cont’d)</strong></p>
+<p><font size="3" face="Open Sans">The SENSE KEY is used for normal error
+handling during operation.</font></p>
+<p><font size="3" face="Open Sans">The ADDITIONAL SENSE CODE (ASC) and the
+ADDITIONAL SENSE CODE QUALIFIER (ASCQ) are mainly used for detailed diagnostic
+and logging (post-mortem) information. If the device server does not have
+further information related to the error or exception condition, these fields
+shall be set to zero. Generally, except for a certain few, they’re not
+mandatory and they may be set to zero, which means no additional information
+provided. See [SPC] for a list of additional sense codes and additional sense
+code qualifiers.</font></p>
+<p><b><font size="3" face="Open Sans">Sense Key</font></b></p>
+<p><font size="3" face="Open Sans">The Sense Key value provides a means to
+categorize errors and exceptional conditions. The Sense Key indicates a
+particular type of error. The Additional Sense Code and Additional Sense Code
+Qualifier can be used to further detail and describe the condition that the
+Sense Key indicates. Sense Keys are specific to the action performed by a
+particular command.</font></p>
+<table style="HEIGHT: 510px; WIDTH: 880px" cellspacing="1" cols="2" cellpadding="1" width="880" border="1">
+<tbody>
+<tr>
+<td colspan="2">
+<p><b><font size="3" face="Open Sans">Sense Key</font></b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b><font size="3" face="Open Sans">Value</font></b></p>
+</td>
+<td colspan="2">
+<p><b><font size="3" face="Open Sans">Description</font></b></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x00h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>NO SENSE</strong> – Indicates
+that there is no specific sense key information to be reported. This would be
+the result of a successfully executed command.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x01h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>RECOVERED ERROR</strong> –
+Indicates that the last command completed successfully after error recovery
+actions were performed by the device server. Further details may be determined
+by examining the additional sense bytes (ASC and ASCQ
+fields).</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x02h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>NOT READY</strong> – Indicates
+that the logical unit addressed cannot be accessed at this
+time.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x03h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>MEDIUM ERROR</strong> –
+Indicates that the last command was unsuccessful due to a non- recoverable
+error condition due to a flaw in the media or failed error
+recovery.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x04h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>HARDWARE ERROR</strong> –
+Indicates that the the device server detected a non-recoverable hardware
+error.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x05h</font></td>
+<td colspan="2">
+<p><font color="#222222"><font face="Open Sans"><font size="3"><strong>ILLEGAL
+REQUEST</strong> – Indicates that there was an illegal parameter value in a
+command descriptor block or within additional parameter data supplied with some
+commands. If the device server detects an invalid parameter in the command
+descriptor block then it shall terminate the command without altering the
+media.</font></font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x06h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>UNIT ATTENTION</strong> –
+Indicates that the unit has been reset or unexpectedly powered-on or that
+removable media has changed.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x07h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>DATA PROTECT</strong> –
+Indicates that a command that reads or writes the medium was attempted on a
+block that is protected from this operation. The read or write operation shall
+not be performed.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x08h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>BLANK CHECK</strong> -
+Indicates that blank or unformatted media was encountered while reading or
+writing.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x09h</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>VENDOR SPECIFIC</strong> –
+This Sense Key is available for reporting vendor specific error or exceptional
+conditions.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x0Ah</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>COPY ABORTED</strong> – Not
+applicable for UFS device. Reserved</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x0Bh</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>ABORTED COMMAND</strong> –
+Indicates that the device server aborted the execution of the command. The
+application client may be able to recover by retrying the
+command.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x0Ch</font></td>
+<td colspan="2">
+<p><font size="3" face="Open Sans"><strong>Reserved</strong></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x0Dh</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>VOLUME OVERFLOW</strong> -
+Indicates that a buffered peripheral device has reached the end-of- partition
+and data may remain in the buffer that has not been written to the
+medium.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x0Eh</font></td>
+<td colspan="2">
+<p><font face="Open Sans"><font size="3"><strong>MISCOMPARE</strong> –
+Indicates that the source data did not match the data read from the
+media.</font></font></p>
+</td>
+</tr>
+<tr>
+<td><font size="3" face="Open Sans">0x0Fh</font></td>
+<td colspan="2">
+<p><font size="3" face="Open Sans"><strong>RESERVED</strong></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="box bottomline">
+<tbody>
+<tr>
+<th><a href="EasyJTAG_Classic_Help.html">Introdusing</a></th>
+</tr>
+</tbody>
+</table>
+<div id="nstext">
+<hr/>
+</div>
+
+
+
+
+</body></html>

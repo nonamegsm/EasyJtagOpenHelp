@@ -5,8 +5,8 @@
     <conditional></conditional>
     <startPage></startPage>
     <toc>
-      <path>../../toc/EasyJTAG_Box_Help.toc</path>
       <name>EasyJTAG_Box_Help</name>
+      <path>../../toc/EasyJTAG_Box_Help.toc</path>
     </toc>
     <index type="boolean">true</index>
     <glossary></glossary>
@@ -19,7 +19,7 @@
   <title>EasyJTAG Box Help</title>
   <type>chm</type>
   <glosstermEffect></glosstermEffect>
-  <outputPath>C:/Users/vano4/Documents/EASY-JTAG/Help/output/</outputPath>
+  <outputPath>D:/</outputPath>
   <name>EasyJTAG_Box_Help</name>
   <starterPage>EasyJTAG_Box_Help.chm</starterPage>
   <defaultTopic></defaultTopic>

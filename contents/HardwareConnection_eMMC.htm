@@ -8,12 +8,39 @@
   <link rel="stylesheet" href="assets/css/default.css" type="text/css" />
 </head>
 <body>
-  <h1>Hardware Connection eMMC</h1>
-  <p><span>This page is under construction.</span></p>
+  <h1>Hardware Connection for eMMC</h1>
+  <p><span></span></p>
+  <p><span><span>There are 4 types of eMMC connection:</span></span></p>
   <p> </p>
+  <ul class="Disc">
+    <li><a href="Connection_eMMC_Socket.htm">Socket connection</a></li>
+    <li><a href="Connection_eMMC_ISP.htm">ISP (In-System Programing) connection</a></li>
+    <li><a href="Connection_eMMC_Wires.htm">Wired eMMC connection</a></li>
+    <li><a href="Connection_eMMC_PCB.htm">Third-party PBC for soldering eMMC</a></li>
+  </ul>
   <p> </p>
+  <h3>Socket connection</h3>
+  <p><a href="EasyJTAGPlusBox.htm"><span style="font-weight:bold;">EasyJTAG Plus box</span></a> provide native eMMC socket with EasyJTAG Plus box selling. It&#39;s a high-quality tested interface for work with populat eMMC cases at hi-speed (8bit/42Mhz) and simple use.</p>
+  <p><span><span><a href="EasyJTAGbox.htm"><span style="font-weight:bold;">EasyJTAG 1st gen box</span></a> c</span></span>an use only 1bit eMMC <span><span>access via third patry eMMC sockets. <span><span>These sockets need additional power for eMMC via USB charger and may use third-party eMMC socket adapters.</span></span></span></span></p>
   <p> </p>
+  <p><span style="font-size: 14pt; font-weight: bold;">ISP connection</span></p>
   <p> </p>
-  <p><a href="Introduce.htm">Introduce</a></p>
+  <p>ISP (<a href="https://en.wikipedia.org/wiki/In-system_programming">In-System Programming</a>) is <span><span>not documented connection to eMMC at PCB. It use only 1-dat (1bit) mode to transder data between eMMC and box. </span></span></p>
+  <p><span><span>There are 2 types of ISP eMMC connection:</span></span></p>
+  <ul class="Disc">
+    <li>Normal mode</li>
+    <li>Hi-Power CLK mode (tm)</li>
+  </ul>
+  <p> </p>
+  <p><span style="font-weight:bold;">Normal mode</span> is use 6 wires for connection (CLK, CMD, Dat_0, GND, VCC, VCCQ lines)</p>
+  <p><span style="font-weight:bold;">Hi-Power CLK mode </span>is use only 4 wires betweeen eMMC and box (CLK, CMD, Dat_0, GND lines) and power for PCB from USB charger</p>
+  <p> </p>
+  <p><span style="font-size: 14pt; font-weight: bold;">Wired eMMC connection</span></p>
+  <p> </p>
+  <p>Wired eMMC connection is <span><span>variety of ISP connection, but eMMC is not at PCB. It use for rarely eMMC types, <span><span>for which there is no need to buy a socket, like BGA280 cases. Some eMMC brand  (Hynix, Toshiba) correct work only with capacitor at VDDi eMMC pin (1uF).</span></span></span></span></p>
+  <h3>Third Party PCB for Soldering eMMC connection</h3>
+  <p>Some <span><span>manufacturers is created PCB for soldering as low-cost eMMC connecting solution. It may connect to <a href="EasyJTAGPlusBox.htm"><span style="font-weight:bold;">EasyJTAG Plus box</span></a> directly and for <a href="EasyJTAGbox.htm"><span style="font-weight:bold;">EasyJTAG 1st gen box</span></a> with eMMC power additional adapter. This method can work at low <span><span>frequency <span><span>due to interference arising during operation at high frequencies due to simple PCB layout.</span></span></span></span></span></span></p>
+  <p> </p>
+  <p><a href="Introduce.htm" style="font-size: 11pt;">Introduce</a></p>
 </body>
 </html>

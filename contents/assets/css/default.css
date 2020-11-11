@@ -207,3 +207,6 @@ table.img-table, table.img-table tr, table.img-table td {
 	border: none;
 	display: block;
 }
+ol.LowerAlpha {
+	list-style-type: lower-alpha;
+}

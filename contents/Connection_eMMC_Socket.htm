@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>eMMC Socket connection</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="assets/css/default.css" type="text/css" />
+</head>
+<body>
+  <h1>eMMC Socket connection</h1>
+  <p><span></span></p>
+  <h3><span style="font-weight:bold;">EasyJTAG 1st generation box</span> e-Sockets connection:</h3>
+  <p><a href="EasyJTAGbox.htm"><span style="font-weight:bold;">EasyJTAG 1st generation box</span> </a>can use e-Sockets at 1bit-data mode:</p>
+  <p> </p>
+  <p><img src="assets/images/EasyJTAG_1st_gen_socket_1.jpg" /></p>
+  <p> </p>
+  <p><img src="assets/images/EasyJTAG_1st_gen_socket_2.jpg" /></p>
+  <h3><span style="font-weight:bold;">EasyJTAG Plus box e-</span>Socket connection:</h3>
+  <p><img src="assets/images/EasyJTAG_2_Socket.jpg" /></p>
+  <p> </p>
+  <p><img src="assets/images/EasyJTAG_2_TP_Socket.jpg" /></p>
+  <h4><span style="font-weight:bold;">EasyJTAG Plus box </span><span><span>allows</span></span> to check eMMC pins connection at e-Socket.</h4>
+  <p><span style="font-weight:bold;">EasyJTAG Classic software</span>: </p>
+  <p>Use &quot;Scan&quot; button for see visual pins connect as box connector pinout. Also info of connected pins is posted to log window as:</p>
+  <p> </p>
+  <p>Initial pull results:<br />
+      clock: 937mV pin connected ok<br />
+      command: 1030mV pin connected ok<br />
+      data0: 1031mV pin connected ok<br />
+      data1: 1026mV pin connected ok<br />
+      data2: 1029mV pin connected ok<br />
+      data3: 1031mV pin connected ok<br />
+      data4: 1027mV pin connected ok<br />
+      data5: 954mV pin connected ok<br />
+      data6: 1032mV pin connected ok<br />
+      data7: 1029mV pin connected ok</p>
+  <p> </p>
+  <p><span style="font-weight:bold;">EasyJTAG Plus software (eMMC tool shuite)</span>:</p>
+  <p>Use &quot;Scan pins&quot; button <span><span>next to the right of &quot;Detect eMMC&quot; button to see visual pin connection. EasyJTAG Plus software automatically close check pins windows after 3 second if all pins connected and go to eMMC detect <span><span>process</span></span>. </span></span></p>
+  <p> </p>
+  <p><span style="font-weight:bold;"><span style="color:#ff0000;">Note:</span></span> When u<span><span>sed &quot;D</span></span>etect eMMC&quot; button without &quot;Detect pins&quot; button and not all eMMC pins connected, eMMC tool shuite is try to use 4-bit or 1-bit connection mode (slowly as 8-bit) and post info about it to log window as: &quot;<span style="font-weight:bold;">Warning</span>: BusWidth is automatically set to 1 Bit&quot;</p>
+  <p>For use fastest 8bit mode user need set it at software again.<br />
+     </p>
+  <p><span style="font-weight:bold;">&quot;EMMC File Manager&quot; addon software</span> as EasyJTAG Classic, post info about connected pins to log window.</p>
+  <p> </p>
+  <h3>E-Socket head positions for different eMMC:</h3>
+  <h3><img src="assets/images/Socket_head_position_small.jpg" /></h3>
+  <h3>eMMC key position for different BGA cases and frames (Only BGA221 use another position):</h3>
+  <p><img src="assets/images/Socket_IC_key_small.jpg" /></p>
+  <p> </p>
+  <p><a href="Introduce.htm">Introduce</a></p>
+</body>
+</html>

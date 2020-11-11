@@ -9,11 +9,33 @@
 </head>
 <body>
   <h1>Repair eMMC Firmware</h1>
-  <p><span>This page is under construction.</span></p>
+  <p>Repair eMMC firmware allow for old Samsung eMMC up to eMMC 5.0 revision. Different eMMC have different internal eMMC controller and different firmware structure, ready to upload. T<span><span>he ability to create firmware for new chips is very <span><span>difficult to implement. </span></span></span></span>Repair eMMC firmware procedure also wiped all eMMC data including RPMB area.</p>
+  <p> </p>
+  <p><span><span>Samsung&#39;s policy has changed towards creating eMMC firmware without erasing data and digitally signed.</span><br />
+      <span>Thus, it is not possible to create firmware for restoring EMMC 5.1 as well as for the latest eMMC 5.0 controller.</span><br />
+      <span>Official &quot;ffu&quot; firmware uploading only allows you to update the firmware, but does not help to restore the chip if it&#39;s in at &quot;OCR Timeout State&quot;.</span></span></p>
+  <p> </p>
+  <p>To clean all eMMC data with RPMP area simply use &quot;Update eMMC firmware&quot; from Normal eMMC state.</p>
+  <p> </p>
+  <h4>To restore eMMC firmare from &quot;OCR Timeout Error&quot; state need use those steps:</h4>
+  <ol class="Decimal">
+    <li>Find TP for eMMC from TP database (in EasyJTAG classic software) or at EasyJTAG Classic software directory and &quot;eMMC TP Pinouts&quot; subfolder</li>
+    <li>Solder <span><span>thin wire for TP <span><span>contact pad</span></span></span></span></li>
+    <li><span style="font-weight:bold;">Connect wire to GND</span></li>
+    <li>Put eMMC to socket</li>
+    <li>Check eMMC at software</li>
+    <li>eMMC will be answer and post info about itself. Revision (Rev.) of eMMC must be <span style="font-weight:bold;">0x56</span></li>
+    <li>Press &quot;Update Firmware&quot; button at software and fill full eMMC marking label name</li>
+    <li><span style="font-weight:bold;">Disconnect TP wire from GND</span></li>
+    <li>Press &quot;Confirm&quot; button at software</li>
+    <li>Restore eMMC firmware will be run</li>
+  </ol>
+  <p> </p>
+  <p>List of EasyJTAG firmware restore supported eMMC can see at EasyJTAG Classic software directory and &quot;eMMC Firmware&quot; subfolder.</p>
   <p> </p>
   <p> </p>
-  <p> </p>
-  <p> </p>
+  <p><span style="color:#ff0000;"><span style="font-weight:bold;">NOTE: eMMC firmware restore does not restore the resource of the chip cells, which have a limited number of write-erase cycles.<br />
+        Thus, if the cells of the chip have exhausted their resource, or are close to the limit, then the life of such a chip is limited to weeks or months.</span></span></p>
   <p> </p>
   <p><a href="Introduce.htm">Introduce</a></p>
 </body>

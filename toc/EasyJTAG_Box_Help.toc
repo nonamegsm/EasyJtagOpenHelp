@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <title>Table of Contents</title>
-  <page navtitle="Introduce" href="../contents/Introduce.htm"></page>
   <book navtitle="Overview">
     <book navtitle="Hardware">
       <page href="../contents/EasyJTAGbox.htm"></page>
       <book navtitle="EasyJTAG Plus box">
         <page navtitle="EasyJTAG Plus box" href="../contents/EasyJTAGPlusBox.htm"></page>
         <page href="../contents/BoxComplectation.htm"></page>
+        <page navtitle="EasyJTAG Plus box Interface" href="../contents/EasyJTAGPlusBox_interface.htm"></page>
         <book navtitle="Additional Instruments">
-          <page href="../contents/eMMCSockets.htm"></page>
+          <page navtitle="eMMC Socket" href="../contents/eMMCSockets.htm"></page>
           <page href="../contents/NANDkitAdapter.htm"></page>
           <page href="../contents/UFSSockets.htm"></page>
         </book>
@@ -17,9 +17,7 @@
     </book>
     <book navtitle="Software">
       <page navtitle="Installation And Drivers" href="../contents/InstallationAndDrivers.htm"></page>
-      <page navtitle="EasyJTAG Classic Software (eMMC File Manager addon)" href="../contents/eMMCFileManagerAddon.htm"></page>
-      <page href="../contents/EasyJTAGPlusSoftware.htm"></page>
-      <book navtitle="Interface">
+      <book navtitle="EasyJTAG Classic Software">
         <page href="../contents/SoftwareInterface.htm"></page>
         <page navtitle="Settings Page" href="../contents/SettingsPage.htm"></page>
         <page href="../contents/LogPage.htm"></page>
@@ -28,32 +26,40 @@
         <page href="../contents/GPTPartitionsTool.htm"></page>
         <page href="../contents/HelpSystem.htm"></page>
         <page href="../contents/EasyRepairPage.htm"></page>
-        <page href="../contents/JTAGPage.htm"></page>
+        <page href="../contents/JTAG_Page.htm"></page>
         <page href="../contents/eMMCPage.htm"></page>
         <page href="../contents/USBPage.htm"></page>
         <page href="../contents/NANDPage.htm"></page>
       </book>
+      <page href="../contents/EasyJTAGPlusSoftware.htm"></page>
+      <page navtitle="eMMC File Manager addon" href="../contents/eMMCFileManagerAddon.htm"></page>
+      <page navtitle="SPI Flasher" href="../contents/SPIFlasherSoftware.htm"></page>
     </book>
     <book navtitle="JTAG Operations">
-      <page href="../contents/WhatIsTheJTAG.htm"></page>
+      <page navtitle="JTAG Overview" href="../contents/JTAG_Overview.htm"></page>
+      <page navtitle="Hardware JTAG Connection" href="../contents/HardwareConnection_JTAG.htm"></page>
       <page href="../contents/EasyRepairProcedure.htm"></page>
-      <page href="../contents/CustomOperations.htm"></page>
     </book>
     <book navtitle="eMMC Operations">
       <page href="../contents/WhatIsTheeMMC.htm"></page>
-      <page navtitle="Hardware Connection eMMC" href="../contents/HardwareConnection_eMMC.htm"></page>
-      <page navtitle="Identify And Check eMMC" href="../contents/IdentifyAndCheck_eMMC.htm"></page>
-      <book navtitle="Read/Write Operation">
-        <page href="../contents/WorkWithPartitions.htm"></page>
-        <page navtitle="eMMC General Errors" href="../contents/EMMCGeneralErrors.htm"></page>
+      <book navtitle="Hardware Connection for eMMC" href="../contents/HardwareConnection_eMMC.htm">
+        <page navtitle="eMMC Socket connection" href="../contents/Connection_eMMC_Socket.htm"></page>
+        <page navtitle="eMMC ISP connection" href="../contents/Connection_eMMC_ISP.htm"></page>
+        <page navtitle="eMMC Wired connection" href="../contents/Connection_eMMC_Wires.htm"></page>
+        <page navtitle="eMMC PCB for soldering connection" href="../contents/Connection_eMMC_PCB.htm"></page>
       </book>
-      <page href="../contents/eMMCConfiguration.htm"></page>
-      <book navtitle="eMMC Advanced Procedures">
-        <page href="../contents/RepairEMMCFirmware.htm"></page>
+      <book navtitle="Work with eMMC">
+        <page navtitle="Identify and check eMMC" href="../contents/IdentifyAndCheck_eMMC.htm"></page>
+        <page navtitle="eMMC General Errors" href="../contents/EMMCGeneralErrors.htm"></page>
+        <page href="../contents/WorkWithPartitions.htm"></page>
+        <book navtitle="eMMC Advanced Procedures">
+          <page href="../contents/RepairEMMCFirmware.htm"></page>
+          <page navtitle="Update eMMC firmware" href="../contents/UpdateEMMCFirmware.htm"></page>
+        </book>
       </book>
     </book>
     <book navtitle="NAND Operations">
-      <page href="../contents/UnderstandingNANDFlash.htm"></page>
+      <page navtitle="NAND Flash overview" href="../contents/UnderstandingNANDFlash.htm"></page>
       <page href="../contents/HardwareConnection_NAND.htm"></page>
       <page href="../contents/NANDChipsPinout.htm"></page>
       <page href="../contents/ApplePPNiConfig.htm"></page>
@@ -63,13 +69,16 @@
       <page href="../contents/HardwareConnection_UFS.htm"></page>
       <page navtitle="Identify And Check UFS" href="../contents/IdentifyAndCheck_UFS.htm"></page>
       <page href="../contents/UFSConfiguration.htm"></page>
+      <page navtitle="UFS General Error Codes" href="../contents/UFSGeneralErrorCodes.htm"></page>
       <book navtitle="UFS Read/Write Operation">
         <page href="../contents/WorkWithPartitions.htm"></page>
-        <page navtitle="UFS General Error Codes" href="../contents/UFSGeneralErrorCodes.htm"></page>
       </book>
     </book>
     <book navtitle="SPI Operations">
-      <page href="../contents/HardwareConnection_SPI.htm"></page>
+      <page navtitle="SPI overview" href="../contents/HardwareConnection_SPI.htm"></page>
+      <page navtitle="EasyJTAG box SPI interface" href="../contents/HardwareConnection_SPI_1.htm"></page>
+      <page navtitle="FT2232 SPI board interface" href="../contents/HardwareConnection_SPI_2.htm"></page>
+      <page navtitle="Bus Pirate SPI interface" href="../contents/HardwareConnection_SPI_3.htm"></page>
     </book>
   </book>
   <book navtitle="Troubleshooting">

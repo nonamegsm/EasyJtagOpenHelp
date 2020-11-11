@@ -8,10 +8,38 @@
   <link rel="stylesheet" href="assets/css/default.css" type="text/css" />
 </head>
 <body>
-  <h1>Hardware Connection SPI</h1>
-  <p><span>This page is under construction.</span></p>
+  <h1>SPI overview</h1>
+  <p><a href="https://en.wikipedia.org/wiki/Serial_Peripheral_Interface"><span style="font-weight:bold;">The Serial Peripheral Interface (SPI)</span></a> is a synchronous serial communication interface specification used for short-distance communication, primarily in embedded systems. The interface was developed by Motorola in the mid-1980s and has become a de facto standard. Typical applications include Secure Digital cards and liquid crystal displays. </p>
+  <p> </p>
+  <h4>The <span style="font-weight:bold;">SPI bus</span> specifies four logic signals:</h4>
+  <ul>
+    <li><span style="font-weight:bold;">SCLK</span>: Serial Clock (output from master)</li>
+    <li><span style="font-weight:bold;">MOSI</span>: Master Output Slave Input, or Master Out Slave In (data output from master)</li>
+    <li><span style="font-weight:bold;">MISO</span>: Master Input Slave Output, or Master In Slave Out (data output from slave)</li>
+    <li><span style="font-weight:bold;">SS:</span> Slave Select (often &quot;active low&quot; output from master)</li>
+  </ul>
+  <p> </p>
+  <p>MOSI (or SDO) on a master connects to MOSI (or SDI) on a slave. MISO (or SDI) on a master connects to MISO (or SDO) on a slave. Slave Select is the same functionality as &quot;chips select&quot; nd is used instead of an addressing concept. Pin names are always capitalized as in Slave Select, Serial Clock, and Master Output Slave Input.</p>
+  <p> </p>
+  <p><img height="214" src="assets/images/SPI_master-slave.png" width="686" /></p>
+  <h3>SPI chips is used as:</h3>
+  <ul class="Disc">
+    <li>PC/notebook BIOS storage</li>
+    <li>Windows-based tablets BIOS storage</li>
+    <li>Simple phones like Nokia infenion XGOLD devices as main Flash IC</li>
+  </ul>
   <p> </p>
   <p> </p>
+  <h3>All SPI chips have same pinout at same cases:</h3>
+  <p> </p>
+  <p><img height="518" src="assets/images/SPI_cases.jpg" style="cursor: nwse-resize;" width="838" /></p>
+  <p> </p>
+  <p><span style="font-weight:bold;color:rgb(255,0,0)">Important: For correct select voltage for SPI chips use datasheet for it&#39;s!!!</span></p>
+  <p> </p>
+  <h4>SPI chips can support ISP connection, like this:</h4>
+  <p style="font-weight: "> </p>
+  <p style="font-weight: "><img src="assets/images/isp_spi_pinout.jpg" /></p>
+  <p style="font-weight: "> </p>
   <p> </p>
   <p> </p>
   <p> </p>

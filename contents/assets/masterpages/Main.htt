@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Main</title>
 </head>
 <body>
   <div data-region="header">
     <p>
-      <br />
+      <br/>
     </p>
   </div>
   <div data-region="topic">
@@ -19,8 +19,8 @@
     <p>Use Master Page to define the layout of your topic in the output.</p>
   </div>
   <div data-region="footer">
-    <p><br/><hr/><span style="font-size: 11pt;">Copyright (c) 2020 </span><a href="http://easy-jtag.com/" style="font-size: 11pt;">EasyJTAG</a><span style="font-size: 11pt;"> by </span><a href="https://z3x-team.com/" style="font-size: 11pt;">Z3X-Team.</a><span style="font-size: 11pt;"> All Rights Reserved.</span></p>
+    <p><br/></p><hr/><span style="font-size: 11pt;">Copyright (c) 2020 </span><a href="http://easy-jtag.com/" style="font-size: 11pt;">EasyJTAG</a><span style="font-size: 11pt;"> by </span><a href="https://z3x-team.com/" style="font-size: 11pt;">Z3X-Team.</a><span style="font-size: 11pt;"> All Rights Reserved.</span><p></p>
   </div>
   <script type="text/javascript" src="../js/custom.js"></script>
-</body>
-</html>
+
+</body></html>

@@ -20,7 +20,7 @@
     <windowsSetting></windowsSetting>
   </content>
   <title>Blank Project</title>
-  <type>webhelp</type>
+  <type>html5</type>
   <glosstermEffect type="number">0</glosstermEffect>
   <outputPath>C:/Users/Александр/Documents/My RoboHelp Projects/outputs/EasyJTAG Box Help/WebHelp</outputPath>
   <name>WebHelp</name>
@@ -104,4 +104,5 @@
     <indexMasterPages></indexMasterPages>
   </pdf>
   <serversstatus></serversstatus>
+  <use_thumbnails type="boolean">false</use_thumbnails>
 </preset>

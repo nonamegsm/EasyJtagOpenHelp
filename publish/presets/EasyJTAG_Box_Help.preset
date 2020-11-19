@@ -95,4 +95,5 @@
     <indexMasterPages></indexMasterPages>
   </pdf>
   <serversstatus></serversstatus>
+  <use_thumbnails type="boolean">false</use_thumbnails>
 </preset>

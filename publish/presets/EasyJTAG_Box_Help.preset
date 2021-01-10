@@ -11,7 +11,11 @@
     <index type="boolean">true</index>
     <glossary></glossary>
     <brs></brs>
-    <language></language>
+    <language>
+      <name>en_US</name>
+      <displayName>English (US)</displayName>
+      <code type="number">1033</code>
+    </language>
     <masterpage></masterpage>
     <mapFiles></mapFiles>
     <windowsSetting></windowsSetting>
@@ -95,5 +99,4 @@
     <indexMasterPages></indexMasterPages>
   </pdf>
   <serversstatus></serversstatus>
-  <use_thumbnails type="boolean">false</use_thumbnails>
 </preset>

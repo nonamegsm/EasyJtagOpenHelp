@@ -1,8 +1,8 @@
 @echo off   
 
 rem Ваш путь к repository !!!!!!!!!!!!   
-set mydrive=J:\ 
-set mypath=Evgen\MyGit 
+set mydrive=F:\
+set mypath=\GitHub\EasyJtagOpenHelp1
 
 rem устанавливаем текущий путь    
 cd %mydrive%    

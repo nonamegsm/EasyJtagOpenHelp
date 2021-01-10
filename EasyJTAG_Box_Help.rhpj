@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="2019.0.14">
+<project version="2019.0.4">
 <title>EasyJTAG Box Help</title>
 <preferences>
 <language>en_US</language>
@@ -22,7 +22,6 @@
 <group>Others</group></ctaggroups>
 <colors></colors>
 <links></links>
-<scripts></scripts>
 <content root="contents/"></content>
 <toc root="toc"></toc>
 <snippets root="contents/assets/snippets"></snippets>

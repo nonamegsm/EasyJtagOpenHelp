@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="assets/css/default.css" type="text/css" />
 </head>
 <body>
-  <h1>eMMC ISP connection</h1>
-  <p><span style="font-weight:bold;">ISP (<a href="https://en.wikipedia.org/wiki/In-system_programming">In-System Programming</a>) i</span>s <span><span>not documented connection for eMMC at PCB. It use 1-dat line (1bit) mode for transder data between eMMC and box. ISP mode connection use CLK, CMD, DAT_0 (Data zero), GND wires and VCC, VCCQ power wires for eMMC.</span></span></p>
+  <h1>eMMC ISP Connection</h1>
+  <p><span style="font-weight:bold;">ISP (<a href="https://en.wikipedia.org/wiki/In-system_programming">In-System Programming</a>) i</span>s <span><span>not documented connection for eMMC at PCB. It use 1-dat line (1bit) mode for transder data between eMMC and box. ISP mode connection use CLK, CMD, DAT0 (Data zero), GND wires and VCC, VCCQ power wires for eMMC.</span></span></p>
   <p> </p>
   <p>Some devices have p<span><span>ads for CLK/CMD/Dat_0 signals on PCB. But mist devices not have pads, and some devices have no wires for these signals of PCB <span><span>top</span></span> layer (wires are placed at internal PCB layer).</span></span></p>
   <p> </p>
@@ -45,9 +45,9 @@
     <li>For <a href="EasyJTAGbox.htm">EasyJTAG 1st generation box</a> need use special 4pins CLK adapter.</li>
   </ul>
   <p> </p>
-  <p>HiPowerCLK mode <span><span>is the best solution for most new devices.</span></span></p>
+  <p><span style="font-weight:bold;">HiPower CLK mode is the best solution for most new devices.</span></p>
   <p> </p>
-  <p>At HiPowerCLK mode ISP eMMC connection need use only this pins:</p>
+  <p>At HiPower CLK mode ISP eMMC connection need use only this pins:</p>
   <ul class="Disc">
     <li>GND</li>
     <li>CMD</li>
@@ -65,6 +65,18 @@
   <p> </p>
   <p><span><span>To increase the stability of operation at 36MHz, it is advisable to modify the adapters by soldering a resistor with a resistance of <span style="font-weight:bold;">10-33 ohms</span> into the gap of the CLK track, like this:</span></span></p>
   <p><span><span><img src="assets/images/isp_clk.jpg" /></span></span></p>
+  <p> </p>
+  <h3>Note about ISP connection:</h3>
+  <p>It is very difficult to guarantee that the ISP connection will work on any device</p>
+  <p> </p>
+  <p>The problem is that if the device is turned off, the power supplied to the eMMC also starts other chips of the device, and they can interfere with the signals going to the eMMC.</p>
+  <p> </p>
+  <p>In the case of the HiPower CLK mode, the box also interferes with the fully functioning processor-memory bus.</p>
+  <p>To do this, users need to check the &quot;HiPower CLK mode&quot; checkbox in the software, which increases the signal power of the CLK, so that data synchronization between the box and the eMMC is possible.</p>
+  <p> </p>
+  <p>Unfortunately, many users connecting a device powered by USB do not tick this box and write dozens of messages that nothing works for them. Not to mention the fact that they use long wires of different length and not use told GND wire.</p>
+  <p> </p>
+  <p>People do not understand the physics of the processes occurring in the wires, and at the same time do not fulfill the requirements for ISP connecting. That&#39;s why there are constant the same questions on the forum, why the ISP connection is not working,</p>
   <p> </p>
   <p><a href="Introduce.htm">Introduce</a></p>
 </body>

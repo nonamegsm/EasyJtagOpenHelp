@@ -20,7 +20,7 @@
   <ol class="Decimal">
     <li>Bad connection, check connection, check eMMC power</li>
     <li>eMMC card fully dead, need replace</li>
-    <li>eMMC card firmware dead, may be restored (some Samsung eMMC) via testpoint</li>
+    <li>eMMC card firmware dead, may be <a href="RepairEMMCFirmware.htm">restored (some Samsung eMMC)</a> via testpoint</li>
     <li>eMMC card firmware stopped after NAND cell lifetime is over, may be restored (some Samsung eMMC) via testpoint, but it dead agait after few days/weeks/mounth</li>
   </ol>
   <p> </p>
@@ -37,7 +37,7 @@
     <li>Bad connection, check connection</li>
     <li>Try to reduce CLK Rate,  select correct IO voltage as PCB, adapter</li>
     <li>eMMC card fully dead, need replace</li>
-    <li>CRC Error may be occured if eMMC chip and host works in different timing modes, try to force [Disable High Speed eMMC timing] option in setting page.</li>
+    <li>CRC Error may be occured if eMMC chip and host works in different timing modes, try to change [Disable High Speed eMMC timing] option in setting page.</li>
   </ol>
   <p> </p>
   <h2><span style="border-color:rgb(255,0,0);border-style:none;border-width:1px">Operation Errors:</span></h2>
@@ -50,9 +50,12 @@
   <p> </p>
   <h4>Solutions:</h4>
   <ol class="Decimal">
-    <li>For ISP connection: lenght of CMD/CLK/Dat_0 most be is same, GND need use told wire</li>
+    <li>For ISP connection: lenght of CMD/CLK/Dat_0 most be is same, GND need use told wire (See also <a href="Connection_eMMC_ISP.htm">eMMC ISP connection</a>)</li>
     <li>For ISP connection: try to reduce CLK Rate,  select correct IO voltage (VCCQ) as PBC or adapter voltage</li>
-    <li>eMMC NAND cells is lifetime ended or bad, need eMMC replace</li>
+    <li>eMMC NAND cells is lifetime ended or bad, need eMMC replace (See also <a href="eMMCHealthStatus.htm">eMMC Health status</a>)</li>
+    <li>
+      <p>Some eMMC chips have Read-only first sectors cell (<span style="font-weight:bold;">Error erasing at address</span> <span style="font-weight:bold;">0x00000000</span>). <a href="https://forum.gsmhosting.com/vbb/f672/error-writing-address-000000000000-solution-2585863/">Solution for repair it.</a></p>
+    </li>
   </ol>
   <p> </p>
   <p><a href="Introduce.htm" style="font-size: 11pt;">Introduce</a></p>

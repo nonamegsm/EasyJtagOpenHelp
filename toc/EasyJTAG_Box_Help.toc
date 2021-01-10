@@ -16,7 +16,9 @@
       </book>
     </book>
     <book navtitle="Software">
-      <page navtitle="EasyJTAG Classic software" href="../contents/SoftwareInterface.htm"></page>
+      <book navtitle="EasyJTAG Classic software">
+        <page navtitle="EasyJTAG Classic software overview" href="../contents/SoftwareInterface.htm"></page>
+      </book>
       <page navtitle="EasyJTAG Plus Software (eMMC Tool suite)" href="../contents/EasyJTAGPlusSoftware.htm"></page>
       <page navtitle="eMMC File Manager addon (EFM)" href="../contents/eMMCFileManagerAddon.htm"></page>
       <page navtitle="EasyJTAG SPI Flasher" href="../contents/SPIFlasherSoftware.htm"></page>

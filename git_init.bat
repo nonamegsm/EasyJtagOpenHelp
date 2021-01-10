@@ -1,8 +1,8 @@
 @echo off  
 
 rem Ваш путь к repository !!!!!!!!!!!! 
-set mydrive=J:\
-set mypath=Evgen\MyGit\GameNode.js 
+set mydrive=F:\
+set mypath=\GitHub\EasyJtagOpenHelp
 
 rem Проверяем => путь должен существовать 
 if not exist %mydrive%%mypath% ( 

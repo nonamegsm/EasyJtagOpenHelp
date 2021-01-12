@@ -49,6 +49,11 @@
         <page navtitle="FT2232 SPI interface" href="../contents/HardwareConnection_SPI_2.htm"></page>
         <page navtitle="Bus Pirate SPI interface" href="../contents/HardwareConnection_SPI_3.htm"></page>
       </book>
+      <book navtitle="USB connection">
+        <page href="../contents/Connection_USB_ADB.htm"></page>
+        <page navtitle="Qualcomm HS-USB QDLoader 9008 USB connection" href="../contents/Connection_USB_QD9008.htm"></page>
+        <page navtitle="LG USB LAF connection" href="../contents/Connection_USB_LAF.htm"></page>
+      </book>
     </book>
     <book navtitle="Work with JTAG">
       <page navtitle="EasyRepair Procedure" href="../contents/EasyRepairProcedure.htm"></page>

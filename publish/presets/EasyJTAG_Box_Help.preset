@@ -12,9 +12,9 @@
     <glossary></glossary>
     <brs></brs>
     <language>
-      <name>en_US</name>
-      <displayName>English (US)</displayName>
       <code type="number">1033</code>
+      <displayName>English (US)</displayName>
+      <name>en_US</name>
     </language>
     <masterpage></masterpage>
     <mapFiles></mapFiles>
@@ -23,7 +23,7 @@
   <title>EasyJTAG Box Help</title>
   <type>chm</type>
   <glosstermEffect></glosstermEffect>
-  <outputPath>D:/</outputPath>
+  <outputPath>C:/Users/Vano/Documents/EASY-JTAG/Help/output/</outputPath>
   <name>EasyJTAG_Box_Help</name>
   <starterPage>EasyJTAG_Box_Help.chm</starterPage>
   <defaultTopic></defaultTopic>
@@ -81,8 +81,11 @@
   </sitemap>
   <skin></skin>
   <createThumbNails></createThumbNails>
+  <use_thumbnails type="boolean">false</use_thumbnails>
   <favicon></favicon>
   <thumbnail></thumbnail>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
   <pdf>
     <toclevel></toclevel>
     <coverpage></coverpage>
@@ -91,12 +94,5 @@
     <height></height>
     <tocdepth></tocdepth>
     <margin></margin>
-    <masterpage></masterpage>
-    <multiHeaders></multiHeaders>
-    <tocMasterPages></tocMasterPages>
-    <topicMasterPages></topicMasterPages>
-    <gloMasterPages></gloMasterPages>
-    <indexMasterPages></indexMasterPages>
   </pdf>
-  <serversstatus></serversstatus>
 </preset>

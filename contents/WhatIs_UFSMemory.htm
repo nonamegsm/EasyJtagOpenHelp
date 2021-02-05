@@ -9,10 +9,15 @@
 </head>
 <body>
   <h1>What is the UFS Memory</h1>
-  <p><strong>Universal Flash Storage</strong>, officially abbreviated as <strong>UFS</strong>, is a <a href="https://en.wikipedia.org/wiki/Flash_memory">flash storage</a>  specification for <a href="https://en.wikipedia.org/wiki/Mobile_phone">mobile phones</a> and <a href="https://en.wikipedia.org/wiki/Consumer_electronics">consumer electronic devices</a>. It aims to bring higher <a href="https://en.wikipedia.org/wiki/Data_transmission">data transfer</a>  speed and increased reliability to flash memory storage. UFS is positioned as a replacement for <a href="https://en.wikipedia.org/wiki/MultiMediaCard#eMMC">eMMCs</a> and <a href="https://en.wikipedia.org/wiki/SD_card">SD cards</a>. The electrical interface for UFS uses the <a href="https://en.wikipedia.org/wiki/M-PHY">M-PHY</a>, developed by the <a href="https://en.wikipedia.org/wiki/MIPI_Alliance">MIPI Alliance</a>, a high speed serial interface targeting 2.9 Gbit/s per lane with up-scalability to 5.8 Gbit/s per lane. UFS implements a full-duplex serial <a href="https://en.wikipedia.org/wiki/Low-voltage_differential_signaling">LVDS</a> interface that scales better to higher bandwidths than the 8-lane parallel interface of eMMCs. Unlike eMMC, Universal Flash Storage is based on the <a href="https://en.wikipedia.org/wiki/SCSI_architectural_model">SCSI architectural model</a> and supports <a href="https://en.wikipedia.org/wiki/Tagged_Command_Queuing">SCSI Tagged Command Queuing</a>.</p>
+  <p><strong>Universal Flash Storage</strong>, officially abbreviated as <strong>UFS</strong>, is a <a href="https://en.wikipedia.org/wiki/Flash_memory">flash storage</a>  specification for <a href="https://en.wikipedia.org/wiki/Mobile_phone">mobile phones</a>    and <a href="https://en.wikipedia.org/wiki/Consumer_electronics">consumer electronic devices</a>. It aims to bring higher <a href="https://en.wikipedia.org/wiki/Data_transmission">data transfer</a>  speed and increased reliability to flash memory
+    storage. UFS is positioned as a replacement for <a href="https://en.wikipedia.org/wiki/MultiMediaCard#eMMC">eMMCs</a> and <a href="https://en.wikipedia.org/wiki/SD_card">SD cards</a>. The electrical interface for UFS uses the <a href="https://en.wikipedia.org/wiki/M-PHY">M-PHY</a>,
+    developed by the <a href="https://en.wikipedia.org/wiki/MIPI_Alliance">MIPI Alliance</a>, a high speed serial interface targeting 2.9 Gbit/s per lane with up-scalability to 5.8 Gbit/s per lane. UFS implements a full-duplex serial <a href="https://en.wikipedia.org/wiki/Low-voltage_differential_signaling">LVDS</a>    interface that scales better to higher bandwidths than the 8-lane parallel interface of eMMCs. Unlike eMMC, Universal Flash Storage is based on the <a href="https://en.wikipedia.org/wiki/SCSI_architectural_model">SCSI architectural model</a> and supports
+    <a href="https://en.wikipedia.org/wiki/Tagged_Command_Queuing">SCSI Tagged Command Queuing</a>.</p>
   <p> </p>
   <h2>EasyJTAG Plus box and UFS Memory</h2>
-  <p>EasyJTAG Plus box supports UFS memory connection and basic operations like. Identification, Multiple LUN access, Reading, Writing, and access to UFS Memory attributes, configs etc as well. Current operations speed is limited to 3MB/sec and will be increased in next firmware versions. Minimal firmware for UFS access is 2.35. There is impossible to gain UFS support with old hardware revisions ( 1.xx firmwares ). UFS Functions did not requires any additional activation and available soon in EasyJAG Classic suite. For connecting UFS chip user need to buy an EasyJTAG UFS socket for necessary memory chip.</p>
+  <p>EasyJTAG Plus box supports UFS memory connection and basic operations like. Identification, Multiple LUN access, Reading, Writing, and access to UFS Memory attributes, configs etc as well. Current operations speed is limited to 3MB/sec and will be increased
+    in next firmware versions. Minimal firmware for UFS access is 2.35. There is impossible to gain UFS support with old hardware revisions ( 1.xx firmwares ). UFS Functions did not requires any additional activation and available soon in EasyJAG Classic
+    suite. For connecting UFS chip user need to buy an EasyJTAG UFS socket for necessary memory chip.</p>
   <h2>Why its so Fast?</h2>
   <p><img alt="/eMMC 5.1 Parallel Interface" src="assets/images/eMMC_51_Parallel_Interface.png" title="eMMC 5.1 Parallel Interface" /></p>
   <p> </p>
@@ -23,9 +28,11 @@
   <p> </p>
   <p>Due to the parallel 8-bit interface used for eMMC, read and write operations are sequential, or half-duplex. The new UFS 2.1 standard has dedicated read and write paths, allowing for full-duplex operation. Essentially, UFS 2.1 can read and write simultaneously.</p>
   <p> </p>
-  <p>The combination of the serial interface and full-duplex data transfers mean that UFS 2.1 can achieve two to four times the peak bandwidth of eMMC 5.1 and in a more power-efficient manner. There are already two iterations of UFS 2.1: high speed-gear2 allows for a peak bandwidth of 5.8Gbps over two lanes, while high speed-gear3 has a peak bandwidth of up to 11.6Gbps over two lanes.</p>
+  <p>The combination of the serial interface and full-duplex data transfers mean that UFS 2.1 can achieve two to four times the peak bandwidth of eMMC 5.1 and in a more power-efficient manner. There are already two iterations of UFS 2.1: high speed-gear2
+    allows for a peak bandwidth of 5.8Gbps over two lanes, while high speed-gear3 has a peak bandwidth of up to 11.6Gbps over two lanes.</p>
   <p> </p>
-  <p>UFS also utilizes Command Queue (CQ), similar to eMMC 5.1, allowing it to harness the multi-tasking features of mobile operating systems and multi-core CPUs. This feature allows multiple read and write commands to be executed by the UFS device in parallel, significantly increasing command processing speeds.</p>
+  <p>UFS also utilizes Command Queue (CQ), similar to eMMC 5.1, allowing it to harness the multi-tasking features of mobile operating systems and multi-core CPUs. This feature allows multiple read and write commands to be executed by the UFS device in parallel,
+    significantly increasing command processing speeds.</p>
   <h3>UFS memory packages:</h3>
   <ul class="Disc">
     <li>BGA95 case (Old Samsung Flagship phones like SM-G920, SM-G925)<img src="assets/images/BGA95.jpg" /></li>
@@ -41,6 +48,5 @@
   <ul class="Disc">
   </ul>
   <p> </p>
-  <p><a href="Introduce.htm">Introduce</a></p>
 </body>
 </html>

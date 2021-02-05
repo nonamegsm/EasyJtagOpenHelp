@@ -9,9 +9,12 @@
 </head>
 <body>
   <h1>eMMC ISP Connection</h1>
-  <p><span style="font-weight:bold;">ISP (<a href="https://en.wikipedia.org/wiki/In-system_programming">In-System Programming</a>) i</span>s <span><span>not documented connection for eMMC at PCB. It use 1-dat line (1bit) mode for transder data between eMMC and box. ISP mode connection use CLK, CMD, DAT0 (Data zero), GND wires and VCC, VCCQ power wires for eMMC.</span></span></p>
+  <p><span style="font-weight:bold;">ISP (<a href="https://en.wikipedia.org/wiki/In-system_programming">In-System Programming</a>) i</span>s <span><span>not documented connection for eMMC at PCB. It use 1-dat line (1bit) mode for transder data between eMMC and box. ISP mode connection use CLK, CMD, DAT0 (Data zero), GND wires and VCC, VCCQ power wires for eMMC.</span></span>
+  </p>
   <p> </p>
-  <p>Some devices have p<span><span>ads for CLK/CMD/Dat_0 signals on PCB. But mist devices not have pads, and some devices have no wires for these signals of PCB <span><span>top</span></span> layer (wires are placed at internal PCB layer).</span></span></p>
+  <p>Some devices have p<span><span>ads for CLK/CMD/Dat_0 signals on PCB. But mist devices not have pads, and some devices have no wires for these signals of PCB <span><span>top</span></span> layer (wires are placed at internal PCB layer).</span>
+    </span>
+  </p>
   <p> </p>
   <p><span><span></span></span><span style="font-size: 11pt;">There are 2 types of ISP eMMC connection:</span></p>
   <ul class="Disc">
@@ -34,12 +37,15 @@
   <p> </p>
   <p>Device board have no power from USB charger or battery. Power to eMMC is external (VCC, VCCQ wires) and provide from <span style="font-weight:bold;">EasyJTAG Plus</span> box or from third-party power adapder for <span style="font-weight:bold;">EasyJTAG 1st generation box</span>.</p>
   <p> </p>
-  <p><span><span>Some devices need use Pull-UP resistors for DAT0/CMD lines (100-200 ohms):</span></span></p>
-  <p><span><span><img height="93" src="assets/images/pullup_note.jpg" width="642" /></span></span></p>
+  <p><span><span>Some devices need use Pull-UP resistors for DAT0/CMD lines (100-200 ohms):</span></span>
+  </p>
+  <p><span><span><img height="93" src="assets/images/pullup_note.jpg" width="642"/></span></span>
+  </p>
   <p>For best ISP connection relults EasyJTAG Plus box (with box firmware v2.53+) allow use different VIO levels voltages: 1,8/2.0/2.2/2,4/2.6/2.8/3.0/3.3v</p>
   <h3>HiPower CLK (tm) mode:</h3>
   <ul class="Disc">
-    <li>Device board get power from USB charger or <span><span>together USB/battеry. </span></span></li>
+    <li>Device board get power from USB charger or <span><span>together USB/battеry. </span></span>
+    </li>
     <li>VCC/VCCQ wires are not connected at this mode. </li>
     <li>At software must be set &quot;HiPowerCLK mode&quot; checkbox.</li>
     <li>For <a href="EasyJTAGbox.htm">EasyJTAG 1st generation box</a> need use special 4pins CLK adapter.</li>
@@ -54,17 +60,25 @@
     <li>CLK</li>
     <li>DAT0</li>
   </ul>
-  <h3><span><span>Important requirements that must be met for a quality ISP connection:</span></span></h3>
+  <h3><span><span>Important requirements that must be met for a quality ISP connection:</span></span>
+  </h3>
   <ul class="Disc">
     <li><span style="color:#ff0000;">GND wire should be much thicker compared to others</span></li>
     <li><span style="color:#ff0000;">the length of all wires must be same</span></li>
     <li><span style="color:#ff0000;">the length of all wires should be kept to a minimum. Best length is 5-10 centimeters</span></li>
   </ul>
   <p> </p>
-  <p><span style="font-weight:bold;">CLK clock</span> at ISP mode <span><span>determines the data trarsfer speed beetwin eMMC and box. I<span><span>f the above requirements are met, the stability of operation is ensured at frequencies up to <span style="font-weight:bold;">24-36MHz</span>.</span> <span>The best performance is from <span style="font-weight:bold;">14-24MHz</span>.</span> <span>There is no need to use lower frequencies. </span></span></span></span></p>
+  <p><span style="font-weight:bold;">CLK clock</span> at ISP mode <span><span>determines the data trarsfer speed beetwin eMMC and box. I<span><span>f the above requirements are met, the stability of operation is ensured at frequencies up to <span style="font-weight:bold;">24-36MHz</span>.</span>
+    <span>The best performance is from <span style="font-weight:bold;">14-24MHz</span>.</span> <span>There is no need to use lower frequencies. </span></span>
+    </span>
+    </span>
+  </p>
   <p> </p>
-  <p><span><span>To increase the stability of operation at 36MHz, it is advisable to modify the adapters by soldering a resistor with a resistance of <span style="font-weight:bold;">10-33 ohms</span> into the gap of the CLK track, like this:</span></span></p>
-  <p><span><span><img src="assets/images/isp_clk.jpg" /></span></span></p>
+  <p><span><span>To increase the stability of operation at 36MHz, it is advisable to modify the adapters by soldering a resistor with a resistance of <span style="font-weight:bold;">10-33 ohms</span> into the gap of the CLK track, like this:</span>
+    </span>
+  </p>
+  <p><span><span><img src="assets/images/isp_clk.jpg"/></span></span>
+  </p>
   <p> </p>
   <h3>Note about ISP connection:</h3>
   <p>It is very difficult to guarantee that the ISP connection will work on any device</p>
@@ -76,8 +90,7 @@
   <p> </p>
   <p>Unfortunately, many users connecting a device powered by USB do not tick this box and write dozens of messages that nothing works for them. Not to mention the fact that they use long wires of different length and not use told GND wire.</p>
   <p> </p>
-  <p>People do not understand the physics of the processes occurring in the wires, and at the same time do not fulfill the requirements for ISP connecting. That&#39;s why there are constant the same questions on the forum, why the ISP connection is not working,</p>
+  <p>People do not understand the physics of the processes occurring in the wires, and at the same time do not fulfill the requirements for ISP connecting. That&#39;s why there are constant the same questions on the forum, why the ISP connection is not working.</p>
   <p> </p>
-  <p><a href="Introduce.htm">Introduce</a></p>
 </body>
 </html>

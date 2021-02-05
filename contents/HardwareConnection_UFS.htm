@@ -9,15 +9,21 @@
 </head>
 <body>
   <h1>Hardware Connection UFS</h1>
-  <p><span><span>There are 2 types of UFS chips connection:</span></span></p>
+  <p><span><span>There are 2 types of UFS chips connection:</span></span>
+  </p>
   <ul class="Disc">
     <li><a href="UFSSockets.htm">Socket connection</a> (4 link pairs: 2x read + 2x write)</li>
     <li>ISP (In-System Programing) connection (2 link pair: 1x read + 1x write)</li>
   </ul>
   <p> </p>
-  <p>UFS chips is work like ethernet - it&#39;s create link before host and chip and <span><span>supports him constantly. </span></span><span>UFS chips <span><span>establishes a connection</span></span> (link setting mode) always <span>in PWM-G0 mode</span>, </span><span><span><span>after that the host (box) and the chip exchange information about the supported modes, and</span><span> the operating mode switches to one of the supported.</span></span></span></p>
+  <p>UFS chips is work like ethernet - it&#39;s create link before host and chip and <span><span>supports him constantly. </span></span><span>UFS chips <span><span>establishes a connection</span></span> (link setting mode) always <span>in PWM-G0 mode</span>,
+    </span><span><span><span>after that the host (box) and the chip exchange information about the supported modes, and</span><span> the operating mode switches to one of the supported.</span></span>
+    </span>
+  </p>
   <p> </p>
-  <p><span><span style="font-weight:bold;">Z3x EasyJTAG Plus box </span>supports work with UFS chips in <span style="font-weight:bold;">LS mode PWM-G4 (66MHz)</span>, which allows transmitting 1 signal pair up to 4-6MB/s (2 pairs - up to 8-12MB/s). The use of compression will further increase these numbers.</span></p>
+  <p><span><span style="font-weight:bold;">Z3x EasyJTAG Plus box </span>supports work with UFS chips in <span style="font-weight:bold;">LS mode PWM-G4 (66MHz)</span>, which allows transmitting 1 signal pair up to 4-6MB/s (2 pairs - up to 8-12MB/s). The use
+    of compression will further increase these numbers.</span>
+  </p>
   <h4>UFS memory chips is have different with eMMC hardware connection signals:</h4>
   <ul class="Disc">
     <li>RST_n (not use at <span style="font-weight:bold;">LS modes</span>), at some devices need connect to VCCQ</li>
@@ -36,32 +42,30 @@
     <li>RXD0P - <span>DOUT0T</span></li>
     <li>RXD0N - DOUT0C</li>
   </ul>
-  <h4><span><span>UFS memory speed standards:</span></span></h4>
+  <h4><span><span>UFS memory speed standards:</span></span>
+  </h4>
   <p><b>LS modes:</b></p>
   <ul class="Disc">
     <li>PWM-G0: 0.01~3 Mbps</li>
     <li>PWM-G1: 3~9 Mbps</li>
     <li>PWM-G2: 6 ~ 18 Mbps</li>
     <li>PWM-G3: 12 ~ 36 Mbps</li>
-    <li><b>
-        <font color="#800080">PWM-G4: 24 ~ 72 Mbps</font>
-      </b></li>
+    <li><b> <font color="#800080">PWM-G4: 24 ~ 72 Mbps</font> </b></li>
     <li>PWM-G5: 48 ~ 144 Mbps</li>
     <li>PWM-G6: 96 ~ 288 Mbps</li>
     <li>PWM-G7: 192 ~ 576 Mbps</li>
   </ul>
-  <p><br />
+  <p><br/>
     <b>HS modes:</b></p>
   <ul class="Disc">
     <li>HS-G1: 1.25-1.45Gbps</li>
     <li>HS-G2: 2.5-2.9Gbps</li>
-    <li>HS-G3: 5.0-5.8Gbp<br />
-       </li>
+    <li>HS-G3: 5.0-5.8Gbp<br/>
+    </li>
   </ul>
   <p><span style="font-weight:bold;">UFS ISP (In-System Programing)</span> connection is released via <span style="font-weight:bold;">BGA254 2in1 adapter</span>.</p>
-  <p>Connect all pins for non powered PCB, or <span><span>everyone except VCC/VCCQ/VCCQ2 for PCB with power from USB.</span></span></p>
+  <p>Connect all pins for non powered PCB, or <span><span>everyone except VCC/VCCQ/VCCQ2 for PCB with power from USB.</span></span>
+  </p>
   <p> </p>
-  <p> </p>
-  <p><a href="Introduce.htm">Introduce</a></p>
 </body>
 </html>

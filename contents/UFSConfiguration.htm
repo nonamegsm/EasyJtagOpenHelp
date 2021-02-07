@@ -10,7 +10,9 @@
 <body>
   <h1>UFS Configuration</h1>
   <h3>UFS Structure theory</h3>
-  <p>UFS flash device is composed of memory blocks that are mapped to different <span style="font-weight:bold;">Logical Units (LU)</span>. UFS device address space is organized in several memory areas configurable by the user. In particular, such memory areas are denoted as logical units and characterized by the fact that they have independent logical addressable spaces starting from the logical address zero. Each logical unit is independent of other logical units in a device, and has a capacity, write protection, boot flag, memory type, priority, RPMB.</p>
+  <p>UFS flash device is composed of memory blocks that are mapped to different <span style="font-weight:bold;">Logical Units (LU)</span>. UFS device address space is organized in several memory areas configurable by the user. In particular, such memory
+    areas are denoted as logical units and characterized by the fact that they have independent logical addressable spaces starting from the logical address zero. Each logical unit is independent of other logical units in a device, and has a capacity,
+    write protection, boot flag, memory type, priority, RPMB.</p>
   <p> </p>
   <p>As example:</p>
   <ul class="Disc">
@@ -23,19 +25,27 @@
   <p>E.g. REPORT LUNS command targets the REPORT LUNS W-LUN. When starting up, the host starts with REPORT LUNS and READ CAPACITY commands to discover the layout of the device.</p>
   <p> </p>
   <p><span style="font-weight:"></span></p>
-  <p>Logical units are addressed by the LUN (logical unit number), while well known logical unit are addressed by the W-LUN (well known logical unit number). In particular, the UFS device shall support: The number of logical units specified by bMaxNumberLU. Each of them configurable as boot logical units with a maximum of two. One RPMB well known logical unit (W-LUN = 44h, LUN field in UPIU = C4h). RPMB well known logical unit may be further configured into up to four separate RPMB regions (RPMB region 0 - RPMB region 3). Two logical units can be configured as boot logical unit, with only one of them active and readable through the Boot well known logical unit (W-LUN = 30h) for the execution of the system boot (see UFS Boot section of JEDEC Spec). The RPMB well known logical unit is accessed by authenticated operations by a well defined security algorithm. The other logical units will be used to fulfill other use cases.</p>
+  <p>Logical units are addressed by the LUN (logical unit number), while well known logical unit are addressed by the W-LUN (well known logical unit number). In particular, the UFS device shall support: The number of logical units specified by bMaxNumberLU.
+    Each of them configurable as boot logical units with a maximum of two. One RPMB well known logical unit (W-LUN = 44h, LUN field in UPIU = C4h). RPMB well known logical unit may be further configured into up to four separate RPMB regions (RPMB region
+    0 - RPMB region 3). Two logical units can be configured as boot logical unit, with only one of them active and readable through the Boot well known logical unit (W-LUN = 30h) for the execution of the system boot (see UFS Boot section of JEDEC Spec).
+    The RPMB well known logical unit is accessed by authenticated operations by a well defined security algorithm. The other logical units will be used to fulfill other use cases.</p>
   <p> </p>
   <h3>UFS chip config OTP register</h3>
-  <p><span style="color:#ff0000;"><span style="font-weight:bold;">The UFS <span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0">chip configuration can be locked from being changed by</span> OTP (One Time Programming) register.</span></span></p>
+  <p><span style="color:#ff0000;"><span style="font-weight:bold;">The UFS <span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0">chip configuration can be locked from being changed by</span> OTP (One Time Programming)
+    register.</span>
+    </span>
+  </p>
   <p> </p>
   <p>EasyJTAG Classic software post at Log window info only If OTP is closed:  &quot;<span style="font-weight:bold;">Chip config is OTP&quot;. </span></p>
-  <p><span style="font-weight:bold;"></span>If OTP config set, then this chip <span style="font-weight:bold;"><span style="color:#ff0000;">can&#39;t </span></span>be Re-Configered, esle, If OTP not set, UFS chip <span style="font-weight:bold;"><span style="color:#00aa00;font-weight:bold">can</span></span> be Re-Configered.</p>
+  <p><span style="font-weight:bold;"></span>If OTP config set, then this chip <span style="font-weight:bold;"><span style="color:#ff0000;">can&#39;t </span></span>be Re-Configered, esle, If OTP not set, UFS chip <span style="font-weight:bold;"><span style="color:#00aa00;font-weight:bold">can</span></span> be
+    Re-Configered.</p>
   <p> </p>
-  <p><a href="EasyJTAGPlusSoftware.htm">EasyJTAG Plus software</a> is post at log info like this: <span style="font-weight:bold;">Re-configure: <span style="color:#00aa00;">Enabled</span></span> or <span style="font-weight:bold;">Re-configure: <span style="color:#ffaa00;">Disabled</span></span></p>
+  <p><a href="EasyJTAGPlusSoftware.htm">EasyJTAG Plus software</a> is post at log info like this: <span style="font-weight:bold;">Re-configure: <span style="color:#00aa00;">Enabled</span></span> or <span style="font-weight:bold;">Re-configure: <span style="color:#ffaa00;">Disabled</span></span>
+  </p>
   <p> </p>
-  <p><span style="color:#00aa00;"><span style="font-weight:bold;">If UFS chip have Re-Configure state on (OTP not closed), then LUs can be deleted and crerated <span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0">anew with new size and flags.</span></span></span></p>
+  <p><span style="color:#00aa00;"><span style="font-weight:bold;">If UFS chip have Re-Configure state on (OTP not closed), then LUs can be deleted and crerated <span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0">anew with new size and flags.</span></span>
+    </span>
+  </p>
   <p> </p>
-  <p> </p>
-  <p><a href="Introduce.htm">Introduce</a></p>
 </body>
 </html>

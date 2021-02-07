@@ -51,65 +51,46 @@
   <p> </p>
   <p>Types of Health status reports:</p>
   <ul class="Disc">
-    <li>All new eMMC 5.0, 5.01 and 5.1 revision have <span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>standardized</span></span></span> Health Status report.</li>
+    <li>All new eMMC 5.0, 5.01 and 5.1 revision have <span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>standardized</span></span>
+      </span> Health Status report.</li>
     <li>Samsung eMMC 4.1-4.51 revision and some Samsung eMMC 5.0 have internal Samsung Health Status report</li>
     <li>Sandisk eMMC 4.51 and some lover revision have Health Status report</li>
     <li>Other brand eMMC 4.51 and lover revision have no Health Status report</li>
   </ul>
   <h3>Typically eMMC 5.0-5.1 and Sandisk up to 4.51 revision Health Status report:</h3>
   <p>====================</p>
-  <p>Device Life Time Estimation (MLC) [269]: <span style="font-weight:bold;">0x01 <span style="color:#008000;">0% - 10% device life time used</span></span><br />
-    Device Life Time Estimation (SLC) [268]: <span style="font-weight:bold;">0x01 <span style="color:#008000;">0% - 10% device life time used</span></span><br />
-    Pre EOL information [267]: 0x01 <span style="color:#008000;font-weight:bold">Normal</span><br />
-     </p>
+  <p>Device Life Time Estimation (MLC) [269]: <span style="font-weight:bold;">0x01 <span style="color:#008000;">0% - 10% device life time used</span></span><br/> Device Life Time Estimation (SLC) [268]: <span style="font-weight:bold;">0x01 <span style="color:#008000;">0% - 10% device life time used</span></span><br/>    Pre EOL information [267]: 0x01 <span style="color:#008000;font-weight:bold">Normal</span><br/>
+  </p>
   <p>Pre EOL information: overall status for reserved blocks. Possible values are:</p>
   <ul class="Disc">
     <li><b>0x00 - Not defined.</b></li>
-    <li><b>
-        <font color="#008000">0x01 - Normal: consumed less than 80% of the reserved blocks.</font>
-      </b></li>
-    <li><b>
-        <font color="#FFA500">0x02 - Warning: consumed 80% of the reserved blocks.</font>
-      </b></li>
-    <li><b>
-        <font color="#FF0000">0x03 - Urgent: consumed 90% of the reserved blocks</font>
-      </b></li>
+    <li><b> <font color="#008000">0x01 - Normal: consumed less than 80% of the reserved blocks.</font> </b></li>
+    <li><b> <font color="#FFA500">0x02 - Warning: consumed 80% of the reserved blocks.</font> </b></li>
+    <li><b> <font color="#FF0000">0x03 - Urgent: consumed 90% of the reserved blocks</font> </b></li>
   </ul>
   <p>====================</p>
   <p> </p>
-  <p>eMMC can have SLC (Sinlgle Level Cells) cells or/and MLC cells (MLC (Multi Level Cells) cells is MCL/TLC/QLC), and eMMC is reporting about lifetyme of those types of cells. <span style="font-weight:bold;">Lifetyme of cells </span><span style="font-weight:"><span style="font-weight:bold;">can&#39;t be restore.</span> </span></p>
-  <p><span style="font-weight:bold;"><span style="color:#FF0000">Note: Samsung eMMC after firmware reflash procedure is reset lifetime counter, but it not repair eMMC cells, only reset counter.</span></span></p>
+  <p>eMMC can have SLC (Sinlgle Level Cells) cells or/and MLC cells (MLC (Multi Level Cells) cells is MCL/TLC/QLC), and eMMC is reporting about lifetyme of those types of cells. <span style="font-weight:bold;">Lifetyme of cells </span><span style="font-weight:"><span style="font-weight:bold;">can&#39;t be restore.</span> </span>
+  </p>
+  <p><span style="font-weight:bold;"><span style="color:#FF0000">Note: Samsung eMMC after firmware reflash procedure is reset lifetime counter, but it not repair eMMC cells, only reset counter.</span></span>
+  </p>
   <p> </p>
   <h3>Samsung old eMMC Health Status report:</h3>
   <p>====================</p>
-  <p>Reading MoviNand S.M.A.R.T Report ...<br />
-    <br />
-    Card Error mode: Normal<br />
-    Super Block size: 0x00400000 (4194304 bytes)<br />
-    Super Page size: 0x00004000 (16384 bytes)<br />
-    Optimal Write size: 0x00004000 (16384 bytes)<br />
-    Read Reclaim count: 0x12733<br />
-    Optimal TRIM size: 0x00001000 (4096 bytes)<br />
-    Erase Unit size: 0x00040000 (262144 bytes)<br />
-    Total Number of banks: 0x1<br />
-    Initial bad blocks per bank: 3,0,0,0<br />
-    Runtime bad blocks per bank: 0,0,0,0<br />
-    Reserved blocks left per bank : 23,0,0,0<br />
-    All Erase counts (min,avg,max): 1,3478,44718<br />
-    <b>SLC Erase counts (min,avg,max): 1,<font color="#0000CD">43416,44718</font><br />
-      MLC Erase counts (min,avg,max): 398,<font color="#0000CD">432,469</font></b><br />
-    FCB Scan Result: 0x0<br />
-    FTL Open Count: 0x923809</p>
-  <p>====================<br />
-    <br />
-    <span style="font-weight:bold;">Describe this report:</span> This chip have 1 array of cells (Total Number of banks: <span style="font-weight:bold;">0x1</span>), have 3 bad block from factory at 1st array (Initial bad blocks per bank: <span style="font-weight:bold;">3</span>,0,0,0), have 0 new bad block (Runtime bad blocks per bank: <span style="font-weight:bold;">0</span>,0,0,0 ) and 23 free blocks space for remap bad blocks (Reserved blocks left per bank : <span style="font-weight:bold;">23</span>,0,0,0). This chip have <b>
-      <font color="#0000CD">43416 </font>
-    </b>average erase cycles of erase (for SLC max 50 000- 100 000) and<b> <font color="#0000CD" style="text-transform: (default)">432 </font></b>average erase cycles for MLC cells (of 1000-10 000 max).</p>
+  <p>Reading MoviNand S.M.A.R.T Report ...<br/>
+    <br/> Card Error mode: Normal<br/> Super Block size: 0x00400000 (4194304 bytes)<br/> Super Page size: 0x00004000 (16384 bytes)<br/> Optimal Write size: 0x00004000 (16384 bytes)<br/> Read Reclaim count: 0x12733<br/> Optimal TRIM size: 0x00001000 (4096
+    bytes)<br/> Erase Unit size: 0x00040000 (262144 bytes)<br/> Total Number of banks: 0x1<br/> Initial bad blocks per bank: 3,0,0,0<br/> Runtime bad blocks per bank: 0,0,0,0<br/> Reserved blocks left per bank : 23,0,0,0<br/> All Erase counts (min,avg,max):
+    1,3478,44718<br/>
+    <b>SLC Erase counts (min,avg,max): 1,<font color="#0000CD">43416,44718</font><br/>
+MLC Erase counts (min,avg,max): 398,<font color="#0000CD">432,469</font></b><br/> FCB Scan Result: 0x0<br/> FTL Open Count: 0x923809</p>
+  <p>====================<br/>
+    <br/>
+    <span style="font-weight:bold;">Describe this report:</span> This chip have 1 array of cells (Total Number of banks: <span style="font-weight:bold;">0x1</span>), have 3 bad block from factory at 1st array (Initial bad blocks per bank: <span style="font-weight:bold;">3</span>,0,0,0),
+    have 0 new bad block (Runtime bad blocks per bank: <span style="font-weight:bold;">0</span>,0,0,0 ) and 23 free blocks space for remap bad blocks (Reserved blocks left per bank : <span style="font-weight:bold;">23</span>,0,0,0). This chip have <b> <font color="#0000CD">43416 </font> </b>average
+    erase cycles of erase (for SLC max 50 000- 100 000) and<b> <font color="#0000CD" style="text-transform: (default)">432 </font></b>average erase cycles for MLC cells (of 1000-10 000 max).</p>
   <p> </p>
-  <p><span style="font-weight:bold;">Result: This chip have <span style="color:#ff9900;">40-80% cells lifetime</span> use and <span style="color:#009900;">Normal Pre EOL status</span>.</span></p>
+  <p><span style="font-weight:bold;">Result: This chip have <span style="color:#ff9900;">40-80% cells lifetime</span> use and <span style="color:#009900;">Normal Pre EOL status</span>.</span>
+  </p>
   <p> </p>
-  <p> </p>
-  <p> </p>
-  <p><a href="Introduce.htm" style="font-size: 11pt;">Introduce</a><span style="font-size: 11pt;"> </span></p>
 </body>
 </html>

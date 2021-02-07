@@ -17,33 +17,51 @@
   <p> </p>
   <p><span style="font-size: 12pt; font-weight: bold;">Code: -56, Reason: BOX: Chip not connected</span></p>
   <p> </p>
-  <p><span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>The most common error. Check connection, check chip power for ISP connection, connect <span style="font-weight:bold;">RST_n</span> pin on PCB to <span style="font-weight:bold;">VCCQ</span>, try to reball UFS chip when use socket.</span></span></span></p>
+  <p><span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>The most common error. Check connection, check chip power for ISP connection, connect <span style="font-weight:bold;">RST_n</span> pin on
+    PCB to <span style="font-weight:bold;">VCCQ</span>, try to reball UFS chip when use socket.</span>
+    </span>
+    </span>
+  </p>
   <h4>Code: -60, Reason: BOX: AFC exchange fail</h4>
   <p>Cnnection is OK, but chip not answer correctly.</p>
   <h4>Code: -61, Reason: BOX: Power packet exchange fail</h4>
-  <p>Cnnection is OK, <span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>When connecting, the requirements and capabilities of the host (box) for powering the chip are negotiated.</span></span></span> H<span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="2"><span>ost (box) and the UFS chip provide signs of their power capabilities and requirements - then the connection either continues or undergoes a correction or the connection is terminated.  <span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>This error occurs when there is a baq quality connection </span></span></span></span></span></span></p>
+  <p>Cnnection is OK, <span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>When connecting, the requirements and capabilities of the host (box) for powering the chip are negotiated.</span></span>
+    </span> H<span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="2"><span>ost (box) and the UFS chip provide signs of their power capabilities and requirements - then the connection either continues or undergoes a correction or the connection is terminated.  <span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>This error occurs when there is a baq quality connection </span></span>
+    </span>
+    </span>
+    </span>
+    </span>
+  </p>
   <h4>Code: -108, Reason: UTP: response timeout </h4>
   <p>Bad socket connection or defictive chip.</p>
   <h4>Code: -112, Reason: Can&#39;t boot device</h4>
-  <p>UFS firmware not answer. U<span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>sually it means that the chip is defective</span></span></span></p>
+  <p>UFS firmware not answer. U<span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>sually it means that the chip is defective</span></span>
+    </span>
+  </p>
   <h4>Code: -113, Reason: UTP: Failed to NOP request </h4>
   <p>....</p>
   <h4>Code: -116,</h4>
   <p>...</p>
   <h4>Code: -118, Reason: This chip is temporary unsupported. You could disable UFS Safe Mode in options tab.</h4>
   <p>Some Hynix chip is fastly dead, after start work with it. You can Disable &quot;UFS Safe mode&quot; at setting for work with this chips for own risk.</p>
-  <h4>Code: -205, Reason: PORT: Write Error<br />
-    Code: -206, Reason: PORT: Read Error</h4>
+  <h4>Code: -205, Reason: PORT: Write Error<br/> Code: -206, Reason: PORT: Read Error</h4>
   <p>This errors is Read/Write error between box and PC. Solution: change USB box cable or use another USB PC port.</p>
   <h4>Сode: -403, Reason: UAP SCSI: Command sense: MEDIUM_ERROR</h4>
-  <p>Usially it is a read error, and it not solved. UFS chip use ECC/BCH corrections at TLC/QLC memory. <span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>In cases of soldering the microcircuit or other heating of the cells for a long time, situations occur when it is impossible to read data from the cell without correction errors.</span></span> <span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="1"><span><span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="1"><span>At the same time, the cells themselves can remain in working condition and work normally after being erased or written.</span></span></span></span></span></span></p>
+  <p>Usially it is a read error, and it not solved. UFS chip use ECC/BCH corrections at TLC/QLC memory. <span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0"><span>In cases of soldering the microcircuit or other heating of the cells for a long time, situations occur when it is impossible to read data from the cell without correction errors.</span></span>
+    <span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="1"><span><span><span data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="1"><span>At the same time, the cells themselves can remain in working condition and work normally after being erased or written.</span></span>
+    </span>
+    </span>
+    </span>
+    </span>
+  </p>
   <h4>Code: -2303, Reason: UTP: UPIU QUERY result fail: General failure</h4>
   <p>...</p>
   <h2>Basic Header (cont’d)</h2>
   <p><span style="text-align:justify;">The SENSE KEY is used for normal error handling during operation.</span></p>
   <p><span style="text-align:justify;">The ADDITIONAL SENSE CODE (ASC) and the ADDITIONAL SENSE CODE QUALIFIER (ASCQ) are mainly used for detailed diagnostic and logging (post-mortem) information. If the device server does not have further information related to the error or exception condition, these fields shall be set to zero. Generally, except for a certain few, they’re not mandatory and they may be set to zero, which means no additional information provided. See [SPC] for a list of additional sense codes and additional sense code qualifiers.</span></p>
   <h2>Sense Key</h2>
-  <p>The Sense Key value provides a means to categorize errors and exceptional conditions. The Sense Key indicates a particular type of error. The Additional Sense Code and Additional Sense Code Qualifier can be used to further detail and describe the condition that the Sense Key indicates. Sense Keys are specific to the action performed by a particular command.</p>
+  <p>The Sense Key value provides a means to categorize errors and exceptional conditions. The Sense Key indicates a particular type of error. The Additional Sense Code and Additional Sense Code Qualifier can be used to further detail and describe the condition
+    that the Sense Key indicates. Sense Keys are specific to the action performed by a particular command.</p>
   <p> </p>
   <table border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse;" width="100%">
     <colgroup>
@@ -64,7 +82,8 @@
       </tr>
       <tr>
         <td style="text-align: center"><strong>0x01h</strong></td>
-        <td style="text-align: justify"><strong>RECOVERED ERROR</strong> – Indicates that the last command completed successfully after error recovery actions were performed by the device server. Further details may be determined by examining the additional sense bytes (ASC and ASCQ fields).</td>
+        <td style="text-align: justify"><strong>RECOVERED ERROR</strong> – Indicates that the last command completed successfully after error recovery actions were performed by the device server. Further details may be determined by examining the additional sense bytes (ASC and ASCQ
+          fields).</td>
       </tr>
       <tr>
         <td style="text-align: center"><strong>0x02h</strong></td>
@@ -80,7 +99,8 @@
       </tr>
       <tr>
         <td style="text-align: center"><strong>0x05h</strong></td>
-        <td style="text-align: justify"><strong>ILLEGAL REQUEST</strong> – Indicates that there was an illegal parameter value in a command descriptor block or within additional parameter data supplied with some commands. If the device server detects an invalid parameter in the command descriptor block then it shall terminate the command without altering the media.</td>
+        <td style="text-align: justify"><strong>ILLEGAL REQUEST</strong> – Indicates that there was an illegal parameter value in a command descriptor block or within additional parameter data supplied with some commands. If the device server detects an invalid parameter in the command
+          descriptor block then it shall terminate the command without altering the media.</td>
       </tr>
       <tr>
         <td style="text-align: center"><strong>0x06h</strong></td>
@@ -124,9 +144,6 @@
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p><a href="Introduce.htm">Introduce</a></p>
   <p> </p>
 </body>
 </html>

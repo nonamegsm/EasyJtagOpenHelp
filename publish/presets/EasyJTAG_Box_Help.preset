@@ -25,7 +25,7 @@
   <glosstermEffect></glosstermEffect>
   <outputPath>C:/Users/Vano/Documents/EASY-JTAG/Help/output/</outputPath>
   <name>EasyJTAG_Box_Help</name>
-  <starterPage>EasyJTAG_Box_Help.chm</starterPage>
+  <starterPage>EasyJTAG_Classic_Help.chm</starterPage>
   <defaultTopic></defaultTopic>
   <encoding></encoding>
   <lowercasenames></lowercasenames>

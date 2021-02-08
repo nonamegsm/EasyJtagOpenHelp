@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
   <title>Table of Contents</title>
-  <book navtitle="Overview">
-    <book navtitle="Hardware">
-      <page navtitle="EasyJTAG box" href="../contents/EasyJTAGbox.htm"></page>
-      <book navtitle="EasyJTAG Plus box">
-        <page navtitle="EasyJTAG Plus box overview" href="../contents/EasyJTAGPlusBox.htm"></page>
-        <page navtitle="EasyJTAG Plus box complectation" href="../contents/BoxComplectation.htm"></page>
-        <page navtitle="EasyJTAG Plus box interface" href="../contents/EasyJTAGPlusBox_interface.htm"></page>
-        <book navtitle="EasyJTAG Plus box addons">
-          <page navtitle="EasyJTAG Plus box eMMC socket" href="../contents/eMMCSockets.htm"></page>
-          <page navtitle="EasyJTAG Plus box UFS sockets" href="../contents/UFSSockets.htm"></page>
-          <page navtitle="EasyJTAG Plus box NANDkit adapter" href="../contents/NANDkitAdapter.htm"></page>
+  <book navtitle="Overview" format="html" processing-role="normal">
+    <book navtitle="Hardware" format="html" processing-role="normal">
+      <page navtitle="EasyJTAG box" href="../contents/EasyJTAGbox.htm" format="html" processing-role="normal"></page>
+      <book navtitle="EasyJTAG Plus box" format="html" processing-role="normal">
+        <page navtitle="EasyJTAG Plus box overview" href="../contents/EasyJTAGPlusBox.htm" format="html" processing-role="normal"></page>
+        <page navtitle="EasyJTAG Plus box complectation" href="../contents/BoxComplectation.htm" format="html" processing-role="normal"></page>
+        <page navtitle="EasyJTAG Plus box interface" href="../contents/EasyJTAGPlusBox_interface.htm" format="html" processing-role="normal"></page>
+        <book navtitle="EasyJTAG Plus box addons" format="html" processing-role="normal">
+          <page navtitle="EasyJTAG Plus box eMMC socket" href="../contents/eMMCSockets.htm" format="html" processing-role="normal"></page>
+          <page navtitle="EasyJTAG Plus box UFS sockets" href="../contents/UFSSockets.htm" format="html" processing-role="normal"></page>
+          <page navtitle="EasyJTAG Plus box NANDkit adapter" href="../contents/NANDkitAdapter.htm" format="html" processing-role="normal"></page>
         </book>
       </book>
     </book>
-    <book navtitle="Software">
-      <book navtitle="EasyJTAG Classic software">
-        <page navtitle="EasyJTAG Classic software overview" href="../contents/SoftwareInterface.htm"></page>
+    <book navtitle="Software" format="html" processing-role="normal">
+      <book navtitle="EasyJTAG Classic software" format="html" processing-role="normal">
+        <page navtitle="EasyJTAG Classic software overview" href="../contents/SoftwareInterface.htm" format="html" processing-role="normal"></page>
       </book>
-      <page navtitle="EasyJTAG Plus Software (eMMC Tool suite)" href="../contents/EasyJTAGPlusSoftware.htm"></page>
-      <page navtitle="eMMC File Manager addon (EFM)" href="../contents/eMMCFileManagerAddon.htm"></page>
-      <page navtitle="EasyJTAG SPI Flasher" href="../contents/SPIFlasherSoftware.htm"></page>
+      <page navtitle="EasyJTAG Plus Software (eMMC Tool suite)" href="../contents/EasyJTAGPlusSoftware.htm" format="html" processing-role="normal"></page>
+      <page navtitle="eMMC File Manager addon (EFM)" href="../contents/eMMCFileManagerAddon.htm" format="html" processing-role="normal"></page>
+      <page navtitle="EasyJTAG SPI Flasher" href="../contents/SPIFlasherSoftware.htm" format="html" processing-role="normal"></page>
     </book>
-    <book navtitle="Types of Memory">
-      <page navtitle="NAND Memory" href="../contents/NANDPage.htm"></page>
-      <page navtitle="eMMC Memory" href="../contents/WhatIs_eMMC.htm"></page>
-      <page navtitle="UFS Memory" href="../contents/WhatIs_UFSMemory.htm"></page>
-      <page navtitle="SPI Memory" href="../contents/WhatIs_SPI.htm"></page>
+    <book navtitle="Types of Memory" format="html" processing-role="normal">
+      <page navtitle="NAND Memory" href="../contents/NANDPage.htm" format="html" processing-role="normal"></page>
+      <page navtitle="eMMC Memory" href="../contents/WhatIs_eMMC.htm" format="html" processing-role="normal"></page>
+      <page navtitle="UFS Memory" href="../contents/WhatIs_UFSMemory.htm" format="html" processing-role="normal"></page>
+      <page navtitle="SPI Memory" href="../contents/WhatIs_SPI.htm" format="html" processing-role="normal"></page>
     </book>
-    <book navtitle="Types of Connection">
-      <page navtitle="JTAG Overview and connection" href="../contents/JTAG_Overview.htm"></page>
-      <book navtitle="eMMC connection">
-        <page navtitle="Types of eMMC Hardware Connections" href="../contents/HardwareConnection_eMMC.htm"></page>
-        <page navtitle="eMMC Socket connection" href="../contents/Connection_eMMC_Socket.htm"></page>
-        <page navtitle="eMMC ISP Connection" href="../contents/Connection_eMMC_ISP.htm"></page>
-        <page navtitle="eMMC Wired Connection" href="../contents/Connection_eMMC_Wires.htm"></page>
-        <page navtitle="eMMC Soldering at PCB connection" href="../contents/Connection_eMMC_PCB.htm"></page>
+    <book navtitle="Types of Connection" format="html" processing-role="normal">
+      <page navtitle="JTAG Overview and connection" href="../contents/JTAG_Overview.htm" format="html" processing-role="normal"></page>
+      <book navtitle="eMMC connection" format="html" processing-role="normal">
+        <page navtitle="Types of eMMC Hardware Connections" href="../contents/HardwareConnection_eMMC.htm" format="html" processing-role="normal"></page>
+        <page navtitle="eMMC Socket connection" href="../contents/Connection_eMMC_Socket.htm" format="html" processing-role="normal"></page>
+        <page navtitle="eMMC ISP Connection" href="../contents/Connection_eMMC_ISP.htm" format="html" processing-role="normal"></page>
+        <page navtitle="eMMC Wired Connection" href="../contents/Connection_eMMC_Wires.htm" format="html" processing-role="normal"></page>
+        <page navtitle="eMMC Soldering at PCB connection" href="../contents/Connection_eMMC_PCB.htm" format="html" processing-role="normal"></page>
       </book>
-      <book navtitle="NAND connection">
-        <page navtitle="NAND Chips Pinout" href="../contents/NANDChipsPinout.htm"></page>
+      <book navtitle="NAND connection" format="html" processing-role="normal">
+        <page navtitle="NAND Chips Pinout" href="../contents/NANDChipsPinout.htm" format="html" processing-role="normal"></page>
       </book>
-      <book navtitle="UFS connection">
-        <page navtitle="Types of UFS Memory connection" href="../contents/HardwareConnection_UFS.htm"></page>
+      <book navtitle="UFS connection" format="html" processing-role="normal">
+        <page navtitle="Types of UFS Memory connection" href="../contents/HardwareConnection_UFS.htm" format="html" processing-role="normal"></page>
       </book>
-      <book navtitle="SPI connection">
-        <page navtitle="EasyJTAG box native SPI interface" href="../contents/HardwareConnection_SPI_1.htm"></page>
-        <page navtitle="FT2232 SPI interface" href="../contents/HardwareConnection_SPI_2.htm"></page>
-        <page navtitle="Bus Pirate SPI interface" href="../contents/HardwareConnection_SPI_3.htm"></page>
+      <book navtitle="SPI connection" format="html" processing-role="normal">
+        <page navtitle="EasyJTAG box native SPI interface" href="../contents/HardwareConnection_SPI_1.htm" format="html" processing-role="normal"></page>
+        <page navtitle="FT2232 SPI interface" href="../contents/HardwareConnection_SPI_2.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Bus Pirate SPI interface" href="../contents/HardwareConnection_SPI_3.htm" format="html" processing-role="normal"></page>
       </book>
-      <book navtitle="USB connection">
-        <page href="../contents/Connection_USB_ADB.htm"></page>
-        <page navtitle="Qualcomm HS-USB QDLoader 9008 USB connection" href="../contents/Connection_USB_QD9008.htm"></page>
-        <page navtitle="LG USB LAF connection" href="../contents/Connection_USB_LAF.htm"></page>
-      </book>
-    </book>
-    <book navtitle="Work with JTAG">
-      <page navtitle="EasyRepair Procedure" href="../contents/EasyRepairProcedure.htm"></page>
-    </book>
-    <book navtitle="Work with eMMC">
-      <page navtitle="eMMC errors" href="../contents/eMMCGeneralErrors.htm"></page>
-      <page navtitle="eMMC Health Status" href="../contents/eMMCHealthStatus.htm"></page>
-      <book navtitle="Advanced eMMC Procedures">
-        <page navtitle="Repair eMMC Firmware" href="../contents/RepairEMMCFirmware.htm"></page>
-        <page navtitle="Update eMMC Firmware" href="../contents/UpdateEMMCFirmware.htm"></page>
+      <book navtitle="USB connection" format="html" processing-role="normal">
+        <page href="../contents/Connection_USB_ADB.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Qualcomm HS-USB QDLoader 9008 USB connection" href="../contents/Connection_USB_QD9008.htm" format="html" processing-role="normal"></page>
+        <page navtitle="LG USB LAF connection" href="../contents/Connection_USB_LAF.htm" format="html" processing-role="normal"></page>
       </book>
     </book>
-    <book navtitle="Work with NAND">
-      <page navtitle="Apple PPN iConfig operation" href="../contents/Apple_PPN_iConfig.htm"></page>
+    <book navtitle="Work with JTAG" format="html" processing-role="normal">
+      <page navtitle="EasyRepair Procedure" href="../contents/EasyRepairProcedure.htm" format="html" processing-role="normal"></page>
     </book>
-    <book navtitle="Work with UFS">
-      <page navtitle="UFS Error Codes" href="../contents/UFSGeneralErrorCodes.htm"></page>
-      <page navtitle="UFS Configuration" href="../contents/UFSConfiguration.htm"></page>
+    <book navtitle="Work with eMMC" format="html" processing-role="normal">
+      <page navtitle="eMMC errors" href="../contents/eMMCGeneralErrors.htm" format="html" processing-role="normal"></page>
+      <page navtitle="eMMC Health Status" href="../contents/eMMCHealthStatus.htm" format="html" processing-role="normal"></page>
+      <book navtitle="Advanced eMMC Procedures" format="html" processing-role="normal">
+        <page navtitle="Repair eMMC Firmware" href="../contents/RepairEMMCFirmware.htm" format="html" processing-role="normal"></page>
+        <page navtitle="Update eMMC Firmware" href="../contents/UpdateEMMCFirmware.htm" format="html" processing-role="normal"></page>
+      </book>
+    </book>
+    <book navtitle="Work with NAND" format="html" processing-role="normal">
+      <page navtitle="Apple PPN iConfig" href="../contents/ApplePPNiConfig.htm" format="html" processing-role="normal"></page>
+    </book>
+    <book navtitle="Work with UFS" format="html" processing-role="normal">
+      <page navtitle="UFS Error Codes" href="../contents/UFSGeneralErrorCodes.htm" format="html" processing-role="normal"></page>
+      <page navtitle="UFS Configuration" href="../contents/UFSConfiguration.htm" format="html" processing-role="normal"></page>
     </book>
   </book>
 </map>
